@@ -5,6 +5,7 @@ public class gun : MonoBehaviour
     public float damage = 10f;
     public float range = 100f;
 
+    public GameObject thisGun, weaponParent;
     public Camera cam;
     public ParticleSystem muzzleFlash;
 
@@ -13,7 +14,7 @@ public class gun : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetButtonDown("Fire1"))
+        if (Input.GetButtonDown("Fire1") && thisGun == weaponParent.transform.GetChild(0).gameObject)
         {
             Shoot();
         }
