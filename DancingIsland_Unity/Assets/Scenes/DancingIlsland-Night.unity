@@ -3185,6 +3185,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 10
   range: 100
+  thisGun: {fileID: 245882485}
+  weaponParent: {fileID: 1757144574}
   cam: {fileID: 424483393}
   muzzleFlash: {fileID: 767777153}
   crossHair: {fileID: 1967024686}
@@ -11417,7 +11419,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 516f70c82bc1e4785ba2fb5b87e839d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mouseSensitivity: 120
+  mouseSensitivity: 150
   playerBody: {fileID: 699303534}
 --- !u!1001 &427359887
 PrefabInstance:
@@ -15737,6 +15739,7 @@ MonoBehaviour:
   speed: 6
   gravity: -14.715
   jumpHeight: 1.3
+  sprintVelocity: 1.15
   groundCheck: {fileID: 1856882561}
   groundDistance: 0.4
   groundMask:
