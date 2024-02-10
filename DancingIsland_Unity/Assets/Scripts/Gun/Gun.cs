@@ -14,7 +14,7 @@ public class gun : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetButtonDown("Fire1") && thisGun == weaponParent.transform.GetChild(0).gameObject)
+        if (Input.GetButtonDown("Fire1") && weaponParent.transform.childCount > 0 && thisGun == weaponParent.transform.GetChild(0).gameObject)
         {
             Shoot();
         }
