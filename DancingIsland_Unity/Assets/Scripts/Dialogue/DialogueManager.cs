@@ -6,12 +6,13 @@ using TMPro;
 public class DialogueManager : MonoBehaviour
 {
     public TextMeshProUGUI nameText, dialogueText;
+
     public Animator animator;
     public MouseLook mouseLook;
     public PlayerMovement playerMovement;
 
     private Queue<string> sentences; //Look up FIFO collections
-    private CameraMovement cameraMovement;
+    private ObjectDialogue objectDialogue;
 
     // Start is called before the first frame update
     void Start()
@@ -19,13 +20,13 @@ public class DialogueManager : MonoBehaviour
         sentences = new Queue<string>();
     }
 
-    public void SartDialogue(Dialogue dialogue, GameObject dialogueTrigger, CameraMovement camera)
+    public void SartDialogue(Dialogue dialogue, ObjectDialogue objectDial)
     {
-        cameraMovement = camera;
+        objectDialogue = objectDial;
 
         MouseAndMovementLock();
 
-        dialogueTrigger.SetActive(false);
+        //dialogueTrigger.SetActive(false);
 
         animator.SetBool("IsOpen", true);
 
@@ -58,7 +59,7 @@ public class DialogueManager : MonoBehaviour
     {
         animator.SetBool("IsOpen", false);
 
-        cameraMovement.DialogueFinished();
+        objectDialogue.DialogueFinished();
 
         MouseAndMovementUnlock();
     }

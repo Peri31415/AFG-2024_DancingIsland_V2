@@ -1,12 +1,8 @@
 ﻿<Properties StartupConfiguration="{98EE4D83-A3AB-F4A1-B83D-B21427B856D4}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Game Stage/GameStage.cs">
-    <Files>
-      <File FileName="Assets/Scripts/Game Stage/GameStage.cs" Line="4" Column="1" />
-    </Files>
-  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="3a04dc36-57fd-4dc2-acc2-4b1fbe33bb24" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="e4a31ffc-230f-48d1-add8-e6b4f88052ee" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

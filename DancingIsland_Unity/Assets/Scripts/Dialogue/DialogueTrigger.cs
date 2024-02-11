@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class DialogueTrigger : MonoBehaviour
 {
-    public CameraMovement cameraMovement;
-    public Dialogue dialogue;
+    public ObjectDialogue cameraMovement;
+    //public Dialogue dialogue;
 
-    public void TriggerDialogue()
+    public void TriggerDialogue(Dialogue dialogue)
     {
-        FindObjectOfType<DialogueManager>().SartDialogue(dialogue, this.transform.gameObject, cameraMovement);
+        FindObjectOfType<DialogueManager>().SartDialogue(dialogue, cameraMovement);
     }
 }

@@ -11858,12 +11858,12 @@ Transform:
   m_GameObject: {fileID: 424483390}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.016, y: 0.91, z: -0.042}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1757144575}
-  m_Father: {fileID: 699303534}
+  m_Father: {fileID: 1939623862}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &424483395
 MonoBehaviour:
@@ -15083,7 +15083,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 658871824}
-  - component: {fileID: 658871823}
+  - component: {fileID: 658871825}
   m_Layer: 0
   m_Name: GameStage
   m_TagString: Untagged
@@ -15091,19 +15091,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &658871823
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 658871822}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d0f4126647534464ba1ce8f729f8b0d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gameStage: 0
 --- !u!4 &658871824
 Transform:
   m_ObjectHideFlags: 0
@@ -15119,6 +15106,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &658871825
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 658871822}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e732d33372b8443499d751aa3faabf98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameStage: 1
 --- !u!1001 &660831616
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16313,7 +16313,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1342191789}
-  - {fileID: 424483394}
+  - {fileID: 1939623862}
   - {fileID: 1856882561}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0.47, y: -80.704, z: -0.212}
@@ -18430,7 +18430,6 @@ GameObject:
   - component: {fileID: 850536384}
   - component: {fileID: 850536386}
   - component: {fileID: 850536385}
-  - component: {fileID: 850536387}
   m_Layer: 0
   m_Name: DialogueWithEntity
   m_TagString: Untagged
@@ -18466,9 +18465,30 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   main_Camera: {fileID: 424483394}
-  initialPos: {fileID: 424483394}
+  initialPos: {fileID: 1939623862}
   targetPos: {fileID: 643826441}
-  dialogueTrigger: {fileID: 850536387}
+  dialogueInteractions:
+  - name: Entity
+    sentences:
+    - Oh my dear fellow...
+    - You have had the bad lack of getting stranded in my iland...
+    - Information
+    - Information
+    - Follow the sphere and it will guide you to the first of the them. You will
+      have to prove your aim against targets spread across the centre of the island.
+  - name: Entity
+    sentences:
+    - Good job traveller! Impressive...
+    - Info
+    - For the second of my trials you will have to beat the heights and prove to
+      me your coordination is as good as your aim...
+  - name: Entity
+    sentences:
+    - Oh my oh my... There is the chance that we might have a prodigy here...
+    - 'Nevertheless, the last of the three is by far the most challenging. Make use
+      of the skills you have demostrated and get rid of my minions
+
+'
 --- !u!65 &850536386
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -18490,28 +18510,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 0.5, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &850536387
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 850536383}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 92225fa2ba8fd4fe3bb0ca31e5098df7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cameraMovement: {fileID: 850536385}
-  dialogue:
-    name: FuckProgramming
-    sentences:
-    - 'Is this reaaaally what you are going to get evaluated in?
-
-'
-    - 'Just for the shake of adding another sentence
-
-'
 --- !u!1001 &855691379
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -41919,6 +41917,38 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1938278089}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1939623861
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1939623862}
+  m_Layer: 0
+  m_Name: CamaraContainer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1939623862
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1939623861}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.016000079, y: 0.9099992, z: -0.041998886}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 424483394}
+  m_Father: {fileID: 699303534}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1940764330
 GameObject:
   m_ObjectHideFlags: 0
@@ -42879,9 +42909,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cameraMovement: {fileID: 0}
-  dialogue:
-    name: 
-    sentences: []
 --- !u!1001 &1984081539
 PrefabInstance:
   m_ObjectHideFlags: 0
