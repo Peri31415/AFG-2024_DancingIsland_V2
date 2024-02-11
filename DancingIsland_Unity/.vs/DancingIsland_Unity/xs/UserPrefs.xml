@@ -1,15 +1,12 @@
 ﻿<Properties StartupConfiguration="{98EE4D83-A3AB-F4A1-B83D-B21427B856D4}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Camera/CameraMovement.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Game Stage/GameStage.cs">
     <Files>
-      <File FileName="Assets/Scripts/Dialogue/Dialogue.cs" Line="7" Column="2" />
-      <File FileName="Assets/Scripts/Dialogue/DialogueManager.cs" Line="27" Column="1" />
-      <File FileName="Assets/Scripts/Dialogue/DialogueTrigger.cs" Line="12" Column="109" />
-      <File FileName="Assets/Scripts/Camera/CameraMovement.cs" Line="38" Column="6" />
+      <File FileName="Assets/Scripts/Game Stage/GameStage.cs" Line="4" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="80a7260b-366c-4a70-b434-f64a503d540c" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="3a04dc36-57fd-4dc2-acc2-4b1fbe33bb24" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
