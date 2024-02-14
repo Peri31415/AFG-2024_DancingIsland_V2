@@ -4602,6 +4602,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -927199367670048503, guid: 682a85a61af54d74fa1d7c93e8f85e18,
         type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 682a85a61af54d74fa1d7c93e8f85e18,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -15253,7 +15258,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e732d33372b8443499d751aa3faabf98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameStage: 1
+  gameStage: Start
 --- !u!1001 &660831616
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18567,7 +18572,7 @@ GameObject:
   - component: {fileID: 850536387}
   m_Layer: 0
   m_Name: DialogueWithEntity
-  m_TagString: Untagged
+  m_TagString: Entity
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18623,9 +18628,10 @@ MonoBehaviour:
   main_Camera: {fileID: 424483394}
   initialPos: {fileID: 1939623862}
   targetPos: {fileID: 643826441}
+  toggleConversation: {fileID: 256004972}
   dialogueInteractions:
   - name: Entity
-    gameStage: 0
+    gameStage: Start
     numberOfInteraction: 0
     sentences:
     - Oh my dear fellow...
@@ -18635,22 +18641,32 @@ MonoBehaviour:
     - Follow the sphere and it will guide you to the first of the them. You will
       have to prove your aim against targets spread across the centre of the island.
   - name: Entity
-    gameStage: 1
+    gameStage: First Trial
     numberOfInteraction: 1
+    sentences:
+    - Some examples...
+  - name: Entity
+    gameStage: First Trial Completed
+    numberOfInteraction: 0
     sentences:
     - Good job traveller! Impressive...
     - Info
     - For the second of my trials you will have to beat the heights and prove to
       me your coordination is as good as your aim...
   - name: Entity
-    gameStage: 2
-    numberOfInteraction: 2
+    gameStage: Second Trial Completed
+    numberOfInteraction: 0
     sentences:
     - Oh my oh my... There is the chance that we might have a prodigy here...
     - 'Nevertheless, the last of the three is by far the most challenging. Make use
       of the skills you have demostrated and get rid of my minions
 
 '
+  - name: Entity
+    gameStage: Third Trial Completed
+    numberOfInteraction: 0
+    sentences:
+    - You have earned your freedom traveller
 --- !u!1001 &855691379
 PrefabInstance:
   m_ObjectHideFlags: 0

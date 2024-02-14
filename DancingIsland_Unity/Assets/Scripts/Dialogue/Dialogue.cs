@@ -7,7 +7,7 @@ public class Dialogue
 {
     public string name;
     public string gameStage;
-    public string numberOfInteraction;
+    public int numberOfInteraction;
 
     [TextArea(3, 10)]
     public string[] sentences;
