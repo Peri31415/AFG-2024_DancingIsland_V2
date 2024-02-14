@@ -6,7 +6,7 @@ public class MyGameManager : MonoBehaviour
 {
     public static MyGameManager Instance;
 
-    public int gameStage = 0;
+    public string gameStage = "Start";
     //public int playerHealth = 100;
     //public int gameTimer = 5;
 

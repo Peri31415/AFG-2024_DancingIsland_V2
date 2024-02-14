@@ -11,12 +11,11 @@ public class ObjectDialogue : MonoBehaviour
     private Transform target;
     private string interactingWith = "";
 
-    //Collider or Button
-    //public DialogueTrigger dialogueTrigger;
-
     //Dialogue
     public Dialogue[] dialogueInteractions;
 
+    //Interactions with this particular NPC
+    protected int numInteractionsPerStage = 0;
 
     public void Update() //This will be used for the camera transform
     {
@@ -24,10 +23,10 @@ public class ObjectDialogue : MonoBehaviour
         Vector3 pos = main_Camera.transform.position;
         Quaternion rot = main_Camera.transform.rotation;
 
-        if (interactingWith == gameObject.name)                    
-            target = targetPos;        
+        if (interactingWith == gameObject.name)
+            target = targetPos;
 
-        else       
+        else
             target = initialPos;
 
         main_Camera.transform.position = Vector3.Lerp(pos, target.position, duration);
@@ -43,31 +42,87 @@ public class ObjectDialogue : MonoBehaviour
     {
         if (other.gameObject.tag == "Player" && dialogueInteractions.Length != 0)
         {
+            if ( && numInteractionsPerStage == 0)
             interactingWith = gameObject.name;
+            TriggerDialogue(DialogueAccordingToNumInteractionsAndGameStage());
 
-            switch (MyGameManager.Instance.gameStage)
-            {
-                case 0:
-                    TriggerDialogue(dialogueInteractions[0]);
-                    break;
-                case 1:
-                    TriggerDialogue(dialogueInteractions[1]);
-                    break;
-                case 2:
-                    TriggerDialogue(dialogueInteractions[2]);
-                    break;
-                case 3:
-                    TriggerDialogue(dialogueInteractions[3]);
-                    break;
-                case 4:
-                    TriggerDialogue(dialogueInteractions[4]);
-                    break;
-            }
+            //else
+            //if (other.gameObject.tag == "Player")
+            //{
+            //    toggleConversation.SetActive(true);
+
+            //    if (Input.GetKey(KeyCode.E))
+            //{
+            //    interactingWith = gameObject.name;
+            //    TriggerDialogue(DialogueAccordingToNumInteractionsAndGameStage());
+
+            //    toggleConversation.SetActive(false);
+            //}
+
+
+
+            //switch (MyGameManager.Instance.gameStage)
+            //{
+            //    case "Start":
+            //        TriggerDialogue (DialogueAccordingToNumInteractionsAndGameStage());
+            //        break;
+            //    case "First Trial":
+            //        TriggerDialogue (DialogueAccordingToNumInteractionsAndGameStage());
+            //        break;
+            //    case "First Trial Completed":
+            //        TriggerDialogue (DialogueAccordingToNumInteractionsAndGameStage());
+            //        break;
+            //    case "Second Trial":
+            //        TriggerDialogue (DialogueAccordingToNumInteractionsAndGameStage());
+            //        break;
+            //    case "Second Trial Completed":
+            //        TriggerDialogue (DialogueAccordingToNumInteractionsAndGameStage());
+            //        break;
+            //    case "Third Trial":
+            //        TriggerDialogue(DialogueAccordingToNumInteractionsAndGameStage());
+            //        break;
+            //    case "Third Trial Completed":
+            //        TriggerDialogue(DialogueAccordingToNumInteractionsAndGameStage());
+            //        break;
+            //    case "Game Finished":
+            //        TriggerDialogue(DialogueAccordingToNumInteractionsAndGameStage());
+            //        break;            
+            //}
         }
     }
 
     public void DialogueFinished()
     {
-        interactingWith = "";    
+        interactingWith = "";
+        numInteractionsPerStage += 1;
+
+        //if ( && numInteractionsPerStage == 0)
+
+        switch (MyGameManager.Instance.gameStage)
+        {
+            case "Start":
+                MyGameManager.Instance.gameStage = "First Trial";
+                break;
+            case "First Trial Completed":
+                MyGameManager.Instance.gameStage = "Second Trial";
+                break;
+            case "Second Trial Completed":
+                MyGameManager.Instance.gameStage = "Third Trial";
+                break;
+            case "Third Trial Completed":
+                MyGameManager.Instance.gameStage = "Game Finished";
+                break;            
+        }
+    }
+
+    public Dialogue DialogueAccordingToNumInteractionsAndGameStage()
+    {
+        foreach (Dialogue d in dialogueInteractions)
+        {
+            if (d.gameStage == MyGameManager.Instance.gameStage)          
+                return d;            
+        }
+
+        return null;
     }
 }

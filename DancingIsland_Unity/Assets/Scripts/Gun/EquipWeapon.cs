@@ -44,7 +44,7 @@ public class EquipWeapon : MonoBehaviour
 
     void Drop()
     {
-         weaponParent.DetachChildren();
+        weaponParent.DetachChildren();
 
         gun.transform.eulerAngles = new Vector3(gun.transform.position.x, gun.transform.position.z, gun.transform.position.y);
 

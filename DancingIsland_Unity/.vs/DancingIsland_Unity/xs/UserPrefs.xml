@@ -1,8 +1,15 @@
 ﻿<Properties StartupConfiguration="{98EE4D83-A3AB-F4A1-B83D-B21427B856D4}|">
-  <MonoDevelop.Ide.Workbench />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Dialogue/ObjectDialogue.cs">
+    <Files>
+      <File FileName="Assets/Scripts/Game Stage/MyGameManager.cs" Line="9" Column="38" />
+      <File FileName="Assets/Scripts/Dialogue/Dialogue.cs" />
+      <File FileName="Assets/Scripts/Dialogue/ObjectDialogue.cs" Line="127" Column="6" />
+      <File FileName="Assets/Scripts/Gun/EquipWeapon.cs" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="e4a31ffc-230f-48d1-add8-e6b4f88052ee" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="e83b89a7-0259-4244-925f-537b8b60496c" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
