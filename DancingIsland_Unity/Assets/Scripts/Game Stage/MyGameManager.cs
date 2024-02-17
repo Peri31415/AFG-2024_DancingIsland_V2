@@ -12,7 +12,7 @@ public class MyGameManager : MonoBehaviour
     private string[] gameStages= 
     {"Start", "First Trial", "First Trial Completed", "Second Trial", "Second Trial Completed", "Third Trial", "Third Trial Completed"};
 
-     private GameObject[] firstTrialObjects, secondTrialObjects, thirdTrialObjects, allTrialObjects;
+    private GameObject[] firstTrialObjects, secondTrialObjects, thirdTrialObjects, allTrialObjects;
 
     //public int playerHealth = 100;
     //public int gameTimer = 5;
@@ -36,32 +36,24 @@ public class MyGameManager : MonoBehaviour
     private void SetStart()
     {
         foreach (GameObject obj in allTrialObjects)
-        {
-            obj.gameObject.SetActive(false);
-        }
+            obj.gameObject.SetActive(false);        
     }
 
     public void SetFirstTrial()
     {
         foreach (GameObject obj in firstTrialObjects)
-        {
-            obj.gameObject.SetActive(true);
-        }
+            obj.gameObject.SetActive(true);            
     }
 
     public void SetSecondtTrial()
     {
         foreach (GameObject obj in secondTrialObjects)
-        {
             obj.gameObject.SetActive(true);
-        }
     }
 
     public void SetThirdTrial()
     {
         foreach (GameObject obj in thirdTrialObjects)
-        {
             obj.gameObject.SetActive(true);
-        }
     }
 }
