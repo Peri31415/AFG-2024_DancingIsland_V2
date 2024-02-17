@@ -76,28 +76,32 @@ public class ObjectDialogue : MonoBehaviour
     public void DialogueFinished()
     {
         interactingWith = "";
-        numInteractionsPerStage += 1;
+        //numInteractionsPerStage += 1;
 
         if (this.gameObject == GameObject.FindWithTag("Entity"))
-        {
-            //MyGameManager.Instance.ProgressGameStage
-            
-            switch (MyGameManager.Instance.gameStage)
+        {            
+            switch (MyGameManager.Instance.currentGameStage)
             {
                 case "Start":
-                    MyGameManager.Instance.gameStage = "First Trial";
+                    MyGameManager.Instance.currentGameStage = "First Trial";
+                    MyGameManager.Instance.SetFirstTrial();
                     numInteractionsPerStage = 0;
                     break;
                 case "First Trial Completed":
-                    MyGameManager.Instance.gameStage = "Second Trial";
+                    MyGameManager.Instance.currentGameStage = "Second Trial";
+                    //MyGameManager.Instance.setFirstTrial;
+                    MyGameManager.Instance.SetSecondtTrial();
                     numInteractionsPerStage = 0;
                     break;
                 case "Second Trial Completed":
-                    MyGameManager.Instance.gameStage = "Third Trial";
+                    MyGameManager.Instance.currentGameStage = "Third Trial";
+                    //MyGameManager.Instance.setFirstTrial;
+                    MyGameManager.Instance.SetThirdTrial();
                     numInteractionsPerStage = 0;
                     break;
                 case "Third Trial Completed":
-                    MyGameManager.Instance.gameStage = "Game Finished";
+                    MyGameManager.Instance.currentGameStage = "Game Finished";
+                    //MyGameManager.Instance.setFirstTrial;
                     numInteractionsPerStage = 0;
                     break;            
             }
@@ -108,7 +112,7 @@ public class ObjectDialogue : MonoBehaviour
     {
         foreach (Dialogue d in dialogueInteractions)
         {
-            if (d.gameStage == MyGameManager.Instance.gameStage && d.numberOfInteraction == numInteractionsPerStage)          
+            if (d.gameStage == MyGameManager.Instance.currentGameStage && d.numberOfInteraction == numInteractionsPerStage)          
                 return d;
         }
 
