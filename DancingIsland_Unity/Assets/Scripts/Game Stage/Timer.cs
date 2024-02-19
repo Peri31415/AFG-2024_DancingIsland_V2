@@ -12,10 +12,9 @@ public class Timer : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        timerText.text = timerTime.ToString();
         remainingTime = timerTime;
 
-        //timerText.GetComponent<ScriptableObject>
+        timerText.GetComponent<Timer>().enabled = false;
     }
 
     // Update is called once per frame

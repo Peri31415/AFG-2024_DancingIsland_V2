@@ -79,6 +79,8 @@ public class EquipWeapon : MonoBehaviour
                 crossHair.SetActive(true);
 
                 pickUpText.SetActive(false);
+
+                GameObject.Find ("TrialsTimer").GetComponent<Timer>().enabled = true;
             }
         }
     }

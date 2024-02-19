@@ -8,6 +8,7 @@ TagManager:
   - First Trial
   - Second Trial
   - Third Trial
+  - All Trials
   layers:
   - Default
   - TransparentFX

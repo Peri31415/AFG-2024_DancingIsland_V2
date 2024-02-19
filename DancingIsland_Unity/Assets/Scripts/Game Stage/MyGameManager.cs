@@ -9,10 +9,14 @@ public class MyGameManager : MonoBehaviour
 
     public string currentGameStage = "Start";
 
-    private string[] gameStages= 
-    {"Start", "First Trial", "First Trial Completed", "Second Trial", "Second Trial Completed", "Third Trial", "Third Trial Completed"};
+    // [SerializeField] private string[] gameStages= 
+    // {"Start", "First Trial", "First Trial Completed", "Second Trial", "Second Trial Completed", "Third Trial", "Third Trial Completed"};
 
-    private GameObject[] firstTrialObjects, secondTrialObjects, thirdTrialObjects, allTrialObjects;
+    private GameObject[] firstTrialObjects, secondTrialObjects, thirdTrialObjects, allTrialsObjects, TotalObjects;
+
+    [HideInInspector] public int targetCount = 0;
+
+    private int firstTrialTargetNumber, thirdtTrialTargetNumber = 0;
 
     //public int playerHealth = 100;
     //public int gameTimer = 5;
@@ -27,22 +31,50 @@ public class MyGameManager : MonoBehaviour
         firstTrialObjects = GameObject.FindGameObjectsWithTag("First Trial");
         secondTrialObjects = GameObject.FindGameObjectsWithTag("Second Trial");
         thirdTrialObjects = GameObject.FindGameObjectsWithTag("Third Trial");
+        allTrialsObjects = GameObject.FindGameObjectsWithTag("All Trials");
 
-        allTrialObjects = firstTrialObjects.Concat(secondTrialObjects.Concat(thirdTrialObjects)).ToArray();
+        TotalObjects = allTrialsObjects.Concat(firstTrialObjects.Concat(secondTrialObjects.Concat(thirdTrialObjects))).ToArray();
+
+        firstTrialTargetNumber = GameObject.Find ("FirstTrialTargets").transform.transform.childCount;
+        //thirdtTrialTargetNumber = GameObject.Find ("ThirdTrialTargets").transform.transform.childCount;
 
         SetStart();
     }
 
+    private void Update() 
+    {
+        if (currentGameStage == "First Trial" && targetCount == firstTrialTargetNumber)
+        {
+            currentGameStage = "First Trial Completed";
+
+            GameObject.Find ("TrialsTimer").GetComponent<Timer>().enabled = false;
+
+            foreach (GameObject obj in firstTrialObjects)
+                obj.gameObject.SetActive(false);
+        }
+
+        if (currentGameStage == "Third Trial" && targetCount == thirdtTrialTargetNumber)
+        {
+            currentGameStage = "Third Trial Completed";
+
+            foreach (GameObject obj in thirdTrialObjects)
+                obj.gameObject.SetActive(false);
+        }
+    }
+
     private void SetStart()
     {
-        foreach (GameObject obj in allTrialObjects)
-            obj.gameObject.SetActive(false);        
+        foreach (GameObject obj in TotalObjects)
+            obj.gameObject.SetActive(false);                      
     }
 
     public void SetFirstTrial()
     {
         foreach (GameObject obj in firstTrialObjects)
-            obj.gameObject.SetActive(true);            
+            obj.gameObject.SetActive(true);
+
+        foreach (GameObject obj in allTrialsObjects)
+            obj.gameObject.SetActive(true);
     }
 
     public void SetSecondtTrial()
