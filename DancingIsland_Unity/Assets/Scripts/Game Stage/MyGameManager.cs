@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class MyGameManager : MonoBehaviour
@@ -8,6 +9,8 @@ public class MyGameManager : MonoBehaviour
     public static MyGameManager Instance;
 
     public string currentGameStage = "Start";
+
+    [Serialize] public GameObject player;
 
     // [SerializeField] private string[] gameStages= 
     // {"Start", "First Trial", "First Trial Completed", "Second Trial", "Second Trial Completed", "Third Trial", "Third Trial Completed"};
@@ -81,6 +84,11 @@ public class MyGameManager : MonoBehaviour
     {
         foreach (GameObject obj in secondTrialObjects)
             obj.gameObject.SetActive(true);
+
+        GameObject.Find ("TrialsTimer").GetComponent<Timer>().enabled = true;
+        
+        player.transform.position = GameObject.Find ("PlayerParkourStartingPos").transform.position;
+        player.transform.rotation = GameObject.Find ("PlayerParkourStartingPos").transform.rotation;
     }
 
     public void SetThirdTrial()
