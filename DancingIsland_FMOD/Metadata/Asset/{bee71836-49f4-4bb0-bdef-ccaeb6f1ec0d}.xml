@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="MasterAssetFolder" id="{bee71836-49f4-4bb0-bdef-ccaeb6f1ec0d}">
+		<property name="streamingAssetThresholdLength">
+			<value>-1</value>
+		</property>
+	</object>
+</objects>
