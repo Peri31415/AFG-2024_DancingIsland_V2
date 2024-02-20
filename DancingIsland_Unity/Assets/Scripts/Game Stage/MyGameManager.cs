@@ -10,11 +10,6 @@ public class MyGameManager : MonoBehaviour
 
     public string currentGameStage = "Start";
 
-    [Serialize] public GameObject player;
-
-    // [SerializeField] private string[] gameStages= 
-    // {"Start", "First Trial", "First Trial Completed", "Second Trial", "Second Trial Completed", "Third Trial", "Third Trial Completed"};
-
     private GameObject[] firstTrialObjects, secondTrialObjects, thirdTrialObjects, allTrialsObjects, TotalObjects;
 
     [HideInInspector] public int targetCount = 0;
@@ -50,7 +45,7 @@ public class MyGameManager : MonoBehaviour
         {
             currentGameStage = "First Trial Completed";
 
-            GameObject.Find ("TrialsTimer").GetComponent<Timer>().enabled = false;
+            
 
             foreach (GameObject obj in firstTrialObjects)
                 obj.gameObject.SetActive(false);
@@ -71,6 +66,13 @@ public class MyGameManager : MonoBehaviour
             obj.gameObject.SetActive(false);                      
     }
 
+    private void TrialComplete()
+    {
+        GameObject.Find ("TrialsTimer").GetComponent<Timer>().enabled = false;
+
+        
+    }
+
     public void SetFirstTrial()
     {
         foreach (GameObject obj in firstTrialObjects)
@@ -87,8 +89,8 @@ public class MyGameManager : MonoBehaviour
 
         GameObject.Find ("TrialsTimer").GetComponent<Timer>().enabled = true;
         
-        player.transform.position = GameObject.Find ("PlayerParkourStartingPos").transform.position;
-        player.transform.rotation = GameObject.Find ("PlayerParkourStartingPos").transform.rotation;
+        PlayerManager.instance.player.transform.position = GameObject.Find ("PlayerParkourStartingPos").transform.position;
+        PlayerManager.instance.player.transform.rotation = GameObject.Find ("PlayerParkourStartingPos").transform.rotation;
     }
 
     public void SetThirdTrial()
