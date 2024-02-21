@@ -6,9 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Menus/MainMenu.unity
+    path: Assets/Scenes/MainMenu.unity
     guid: d13af0224a1884f2ab155e773e08730f
   - enabled: 1
-    path: Assets/Scenes/GamePlay/Dancinglsland-Night.unity
+    path: Assets/Scenes/Dancinglsland-Night.unity
     guid: d6c36a31058c1486a8b2df91ee2d3321
   m_configObjects: {}
