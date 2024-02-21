@@ -6,7 +6,7 @@ using UnityEngine;
 
 public class MyGameManager : MonoBehaviour
 {
-    public static MyGameManager Instance;
+    public static MyGameManager instance;
 
     public string currentGameStage = "Start";
 
@@ -14,14 +14,12 @@ public class MyGameManager : MonoBehaviour
 
     [HideInInspector] public int targetCount = 0;
 
-    private int trialOneTargetNumber, trialThreeEnemyNumber = 0;
-
     private void Awake()
     {
-        if (Instance != null && Instance != this)
+        if (instance != null && instance != this)
             Destroy(this);
         else
-            Instance = this;
+            instance = this;
 
         firstTrialObjects = GameObject.FindGameObjectsWithTag("First Trial");
         secondTrialObjects = GameObject.FindGameObjectsWithTag("Second Trial");
@@ -30,15 +28,12 @@ public class MyGameManager : MonoBehaviour
 
         TotalObjects = allTrialsObjects.Concat(firstTrialObjects.Concat(secondTrialObjects.Concat(thirdTrialObjects))).ToArray();
 
-        trialOneTargetNumber = TrialsManager.instance.trialOneTargets.childCount;
-        trialThreeEnemyNumber = TrialsManager.instance.trialThreeTargets.childCount;
-
         SetStart();
     }
 
     private void Update() 
     {
-        if (currentGameStage == "First Trial" && targetCount == trialOneTargetNumber)
+        if (currentGameStage == "First Trial" && targetCount == TrialsManager.instance.trialOneTargetNumber)
         {
             TrialComplete();
             currentGameStage = "First Trial Completed";
@@ -47,7 +42,7 @@ public class MyGameManager : MonoBehaviour
                 obj.gameObject.SetActive(false);
         }
 
-        if (currentGameStage == "Third Trial" && targetCount == trialThreeEnemyNumber)
+        if (currentGameStage == "Third Trial" && targetCount == TrialsManager.instance.trialThreeEnemyNumber)
         {
             TrialComplete();
             currentGameStage = "Third Trial Completed";
@@ -78,9 +73,10 @@ public class MyGameManager : MonoBehaviour
             obj.gameObject.SetActive(true);
 
         TrialsManager.instance.trialsTimer.enabled = true;
+        TrialsManager.instance.trialsInfo.text = "Climb To The Top";
         
         PlayerManager.instance.player.transform.position = TrialsManager.instance.parkourStartingPos.position;
-        PlayerManager.instance.player.transform.rotation = TrialsManager.instance.playerMainIslandPos.rotation;
+        PlayerManager.instance.player.transform.rotation = TrialsManager.instance.parkourStartingPos.rotation;
     }
 
     public void SetThirdTrial()
@@ -89,7 +85,7 @@ public class MyGameManager : MonoBehaviour
             obj.gameObject.SetActive(true);
     }
 
-    private void TrialComplete()
+    public void TrialComplete()
     {
         TrialsManager.instance.trialsTimer.enabled = false;
         TrialsManager.instance.trialsInfo.text = "Talk to the Entity";

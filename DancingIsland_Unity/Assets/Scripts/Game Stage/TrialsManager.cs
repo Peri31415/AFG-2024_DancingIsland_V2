@@ -1,6 +1,7 @@
 using UnityEngine;
 using TMPro;
 using Microsoft.Unity.VisualStudio.Editor;
+using Unity.Burst.CompilerServices;
 
 public class TrialsManager : MonoBehaviour
 {
@@ -10,7 +11,10 @@ public class TrialsManager : MonoBehaviour
 
     private void Awake() 
     {
-        instance = this;
+        if (instance != null && instance != this)
+            Destroy(this);
+        else
+            instance = this;
     }
 
     #endregion
@@ -20,4 +24,12 @@ public class TrialsManager : MonoBehaviour
     public GameObject crossHair;
     public Transform trialOneTargets, trialThreeTargets;
     public Transform parkourStartingPos, playerMainIslandPos;    
+
+    [HideInInspector] public int trialOneTargetNumber, trialThreeEnemyNumber;
+
+    private void Start() 
+    {
+        trialOneTargetNumber = trialOneTargets.childCount;
+        trialThreeEnemyNumber =  trialThreeTargets.childCount;
+    }
 }

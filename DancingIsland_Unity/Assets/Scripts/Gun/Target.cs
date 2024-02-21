@@ -21,8 +21,8 @@ public class Target : MonoBehaviour
     {
         Destroy(gameObject);
 
-        MyGameManager.Instance.targetCount += 1;
+        MyGameManager.instance.targetCount += 1;
 
-        targetCount.text = "Target Count: " + MyGameManager.Instance.targetCount;         
+        targetCount.text = "Target Count: " + MyGameManager.instance.targetCount;         
     }
 }

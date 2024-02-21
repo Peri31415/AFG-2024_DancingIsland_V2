@@ -80,27 +80,27 @@ public class ObjectDialogue : MonoBehaviour
 
         if (this.gameObject == GameObject.FindWithTag("Entity"))
         {            
-            switch (MyGameManager.Instance.currentGameStage)
+            switch (MyGameManager.instance.currentGameStage)
             {
                 case "Start":
-                    MyGameManager.Instance.currentGameStage = "First Trial";
-                    MyGameManager.Instance.SetFirstTrial();
+                    MyGameManager.instance.currentGameStage = "First Trial";
+                    MyGameManager.instance.SetFirstTrial();
                     numInteractionsPerStage = 0;
                     break;
                 case "First Trial Completed":
-                    MyGameManager.Instance.currentGameStage = "Second Trial";
+                    MyGameManager.instance.currentGameStage = "Second Trial";
                     //MyGameManager.Instance.setFirstTrial;
-                    MyGameManager.Instance.SetSecondtTrial();
+                    MyGameManager.instance.SetSecondtTrial();
                     numInteractionsPerStage = 0;
                     break;
                 case "Second Trial Completed":
-                    MyGameManager.Instance.currentGameStage = "Third Trial";
+                    MyGameManager.instance.currentGameStage = "Third Trial";
                     //MyGameManager.Instance.setFirstTrial;
-                    MyGameManager.Instance.SetThirdTrial();
+                    MyGameManager.instance.SetThirdTrial();
                     numInteractionsPerStage = 0;
                     break;
                 case "Third Trial Completed":
-                    MyGameManager.Instance.currentGameStage = "Game Finished";
+                    MyGameManager.instance.currentGameStage = "Game Finished";
                     //MyGameManager.Instance.setFirstTrial;
                     numInteractionsPerStage = 0;
                     break;            
@@ -112,7 +112,7 @@ public class ObjectDialogue : MonoBehaviour
     {
         foreach (Dialogue d in dialogueInteractions)
         {
-            if (d.gameStage == MyGameManager.Instance.currentGameStage && d.numberOfInteraction == numInteractionsPerStage)          
+            if (d.gameStage == MyGameManager.instance.currentGameStage && d.numberOfInteraction == numInteractionsPerStage)          
                 return d;
         }
 

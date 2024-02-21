@@ -22,7 +22,9 @@ public class PlayerTeleportToMainIsland : MonoBehaviour
                 PlayerManager.instance.player.transform.position = TrialsManager.instance.playerMainIslandPos.position;
                 PlayerManager.instance.player.transform.rotation = TrialsManager.instance.playerMainIslandPos.rotation;
 
-                MyGameManager.Instance.currentGameStage = "Second Trial Completed";
+                MyGameManager.instance.TrialComplete();
+
+                MyGameManager.instance.currentGameStage = "Second Trial Completed";
             }    
         }
     }
