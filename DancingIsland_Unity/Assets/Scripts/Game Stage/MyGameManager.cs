@@ -14,7 +14,7 @@ public class MyGameManager : MonoBehaviour
 
     [HideInInspector] public int targetCount = 0;
 
-    private int firstTrialTargetNumber, thirdtTrialTargetNumber = 0;
+    private int trialOneTargetNumber, trialThreeEnemyNumber = 0;
 
     //public int playerHealth = 100;
     //public int gameTimer = 5;
@@ -33,26 +33,26 @@ public class MyGameManager : MonoBehaviour
 
         TotalObjects = allTrialsObjects.Concat(firstTrialObjects.Concat(secondTrialObjects.Concat(thirdTrialObjects))).ToArray();
 
-        firstTrialTargetNumber = GameObject.Find ("FirstTrialTargets").transform.transform.childCount;
-        //thirdtTrialTargetNumber = GameObject.Find ("ThirdTrialTargets").transform.transform.childCount;
+        trialOneTargetNumber = TrialsManager.instance.trialOneTargets.transform.childCount;
+        trialThreeEnemyNumber = TrialsManager.instance.trialThreeTargets.transform.childCount;
 
         SetStart();
     }
 
     private void Update() 
     {
-        if (currentGameStage == "First Trial" && targetCount == firstTrialTargetNumber)
+        if (currentGameStage == "First Trial" && targetCount == trialOneTargetNumber)
         {
+            TrialComplete();
             currentGameStage = "First Trial Completed";
-
-            
 
             foreach (GameObject obj in firstTrialObjects)
                 obj.gameObject.SetActive(false);
         }
 
-        if (currentGameStage == "Third Trial" && targetCount == thirdtTrialTargetNumber)
+        if (currentGameStage == "Third Trial" && targetCount == trialThreeEnemyNumber)
         {
+            TrialComplete();
             currentGameStage = "Third Trial Completed";
 
             foreach (GameObject obj in thirdTrialObjects)
@@ -64,13 +64,6 @@ public class MyGameManager : MonoBehaviour
     {
         foreach (GameObject obj in TotalObjects)
             obj.gameObject.SetActive(false);                      
-    }
-
-    private void TrialComplete()
-    {
-        GameObject.Find ("TrialsTimer").GetComponent<Timer>().enabled = false;
-
-        
     }
 
     public void SetFirstTrial()
@@ -87,15 +80,21 @@ public class MyGameManager : MonoBehaviour
         foreach (GameObject obj in secondTrialObjects)
             obj.gameObject.SetActive(true);
 
-        GameObject.Find ("TrialsTimer").GetComponent<Timer>().enabled = true;
+        TrialsManager.instance.trialsTimer.enabled = true;
         
-        PlayerManager.instance.player.transform.position = GameObject.Find ("PlayerParkourStartingPos").transform.position;
-        PlayerManager.instance.player.transform.rotation = GameObject.Find ("PlayerParkourStartingPos").transform.rotation;
+        PlayerManager.instance.player.transform.position = TrialsManager.instance.parkourStartingPos.position;
+        PlayerManager.instance.player.transform.rotation = TrialsManager.instance.playerMainIslandPos.rotation;
     }
 
     public void SetThirdTrial()
     {
         foreach (GameObject obj in thirdTrialObjects)
             obj.gameObject.SetActive(true);
+    }
+
+    private void TrialComplete()
+    {
+        TrialsManager.instance.trialsTimer.enabled = false;
+        TrialsManager.instance.trialsInfo.text = "Talk to the Entity";
     }
 }

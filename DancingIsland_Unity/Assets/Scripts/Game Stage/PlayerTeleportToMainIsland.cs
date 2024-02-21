@@ -17,10 +17,10 @@ public class PlayerTeleportToMainIsland : MonoBehaviour
             {
                 teleportText.SetActive(false);
 
-                GameObject.Find ("TrialsTimer").GetComponent<Timer>().enabled = false;
+                TrialsManager.instance.trialsTimer.enabled = false;
 
-                GameObject.FindWithTag ("Player").transform.position = GameObject.Find ("PlayerBackToMainIsland").transform.position;
-                GameObject.FindWithTag ("Player").transform.rotation = GameObject.Find ("PlayerBackToMainIsland").transform.rotation;
+                PlayerManager.instance.player.transform.position = TrialsManager.instance.playerMainIslandPos.position;
+                PlayerManager.instance.player.transform.rotation = TrialsManager.instance.playerMainIslandPos.rotation;
 
                 MyGameManager.Instance.currentGameStage = "Second Trial Completed";
             }    
