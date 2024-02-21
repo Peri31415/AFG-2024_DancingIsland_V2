@@ -16,9 +16,6 @@ public class MyGameManager : MonoBehaviour
 
     private int trialOneTargetNumber, trialThreeEnemyNumber = 0;
 
-    //public int playerHealth = 100;
-    //public int gameTimer = 5;
-
     private void Awake()
     {
         if (Instance != null && Instance != this)
@@ -33,8 +30,8 @@ public class MyGameManager : MonoBehaviour
 
         TotalObjects = allTrialsObjects.Concat(firstTrialObjects.Concat(secondTrialObjects.Concat(thirdTrialObjects))).ToArray();
 
-        trialOneTargetNumber = TrialsManager.instance.trialOneTargets.transform.childCount;
-        trialThreeEnemyNumber = TrialsManager.instance.trialThreeTargets.transform.childCount;
+        trialOneTargetNumber = TrialsManager.instance.trialOneTargets.childCount;
+        trialThreeEnemyNumber = TrialsManager.instance.trialThreeTargets.childCount;
 
         SetStart();
     }
@@ -63,7 +60,7 @@ public class MyGameManager : MonoBehaviour
     private void SetStart()
     {
         foreach (GameObject obj in TotalObjects)
-            obj.gameObject.SetActive(false);                      
+            obj.gameObject.SetActive(false);                 
     }
 
     public void SetFirstTrial()
@@ -96,5 +93,7 @@ public class MyGameManager : MonoBehaviour
     {
         TrialsManager.instance.trialsTimer.enabled = false;
         TrialsManager.instance.trialsInfo.text = "Talk to the Entity";
+
+        TrialsManager.instance.crossHair.SetActive(false);
     }
 }

@@ -1,5 +1,6 @@
 using UnityEngine;
 using TMPro;
+using Microsoft.Unity.VisualStudio.Editor;
 
 public class TrialsManager : MonoBehaviour
 {
@@ -14,9 +15,9 @@ public class TrialsManager : MonoBehaviour
 
     #endregion
 
-    public TextMeshProUGUI trialsInfo;
     public Timer trialsTimer;
-    public GameObject trialOneTargets, trialThreeTargets;
-
+    public TextMeshProUGUI trialsInfo;
+    public GameObject crossHair;
+    public Transform trialOneTargets, trialThreeTargets;
     public Transform parkourStartingPos, playerMainIslandPos;    
 }
