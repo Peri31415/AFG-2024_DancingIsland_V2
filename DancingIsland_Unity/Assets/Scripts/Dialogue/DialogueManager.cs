@@ -26,7 +26,7 @@ public class DialogueManager : MonoBehaviour
     public void SartDialogue(Dialogue dialogue, ObjectDialogue objectDial)
     {
         dialogueOn = true;
-        
+
         objectDialogue = objectDial;
 
         MouseAndMovementLock();
@@ -54,7 +54,7 @@ public class DialogueManager : MonoBehaviour
             EndDialogue();
             return;
         }
-
+        
         string sentence = sentences.Dequeue();
         
         StopAllCoroutines();
@@ -76,9 +76,6 @@ public class DialogueManager : MonoBehaviour
     {
         animator.SetBool("IsOpen", false);
 
-        i += 1;
-
-        Debug.Log ("Dialogue Finished Called " + i);
         objectDialogue.DialogueFinished();
         objectDialogue = null;
 
