@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class PlayerTeleportToMainIsland : MonoBehaviour
 {
-     public GameObject teleportText;
+    public GameObject teleportText;
 
     private void OnTriggerStay(Collider other) 
     {
@@ -17,14 +17,15 @@ public class PlayerTeleportToMainIsland : MonoBehaviour
             {
                 teleportText.SetActive(false);
 
-                TrialsManager.instance.trialsTimer.enabled = false;
-
                 PlayerManager.instance.player.transform.position = TrialsManager.instance.playerMainIslandPos.position;
                 PlayerManager.instance.player.transform.rotation = TrialsManager.instance.playerMainIslandPos.rotation;
 
-                MyGameManager.instance.TrialComplete();
-
-                MyGameManager.instance.currentGameStage = "Second Trial Completed";
+                if (MyGameManager.instance.currentGameStage == "Second Trial")
+                {
+                    TrialsManager.instance.trialsTimer.enabled = false;
+                    MyGameManager.instance.TrialComplete();
+                    MyGameManager.instance.currentGameStage = "Second Trial Completed";
+                }                
             }    
         }
     }

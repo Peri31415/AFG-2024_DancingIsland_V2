@@ -10,6 +10,8 @@ public class MyGameManager : MonoBehaviour
 
     public string currentGameStage = "Start";
 
+    public Transform startPlayerPosition;
+
     private GameObject[] firstTrialObjects, secondTrialObjects, thirdTrialObjects, allTrialsObjects, TotalObjects;
 
     [HideInInspector] public int targetCount = 0;
@@ -35,6 +37,8 @@ public class MyGameManager : MonoBehaviour
     {
         if (currentGameStage == "First Trial" && targetCount == TrialsManager.instance.trialOneTargetNumber)
         {
+            targetCount = 0;
+
             TrialComplete();
             currentGameStage = "First Trial Completed";
 
@@ -44,6 +48,8 @@ public class MyGameManager : MonoBehaviour
 
         if (currentGameStage == "Third Trial" && targetCount == TrialsManager.instance.trialThreeEnemyNumber)
         {
+            targetCount = 0;
+            
             TrialComplete();
             currentGameStage = "Third Trial Completed";
 
@@ -55,7 +61,10 @@ public class MyGameManager : MonoBehaviour
     private void SetStart()
     {
         foreach (GameObject obj in TotalObjects)
-            obj.gameObject.SetActive(false);                 
+            obj.gameObject.SetActive(false);         
+
+        PlayerManager.instance.player.transform.position = startPlayerPosition.position;
+        PlayerManager.instance.player.transform.position = startPlayerPosition.position;
     }
 
     public void SetFirstTrial()

@@ -93,7 +93,6 @@ public class ObjectDialogue : MonoBehaviour
                     numInteractionsPerStage = 0;
                     break;
                 case "Second Trial Completed":
-                    Debug.Log ("Third Trial Active");
                     MyGameManager.instance.currentGameStage = "Third Trial";
                     MyGameManager.instance.SetThirdTrial();
                     numInteractionsPerStage = 0;

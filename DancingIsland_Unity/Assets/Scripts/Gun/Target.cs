@@ -1,5 +1,6 @@
 using UnityEngine;
 using TMPro;
+using System.Data.Common;
 
 public class Target : MonoBehaviour
 {
@@ -23,6 +24,10 @@ public class Target : MonoBehaviour
 
         MyGameManager.instance.targetCount += 1;
 
-        targetCount.text = "Target Count: " + MyGameManager.instance.targetCount;         
+        if (MyGameManager.instance.currentGameStage == "First Trial")
+            targetCount.text = "Target Count: " + MyGameManager.instance.targetCount;         
+
+        if (MyGameManager.instance.currentGameStage == "Third Trial")
+            targetCount.text = "Enemies Down: " + MyGameManager.instance.targetCount;         
     }
 }

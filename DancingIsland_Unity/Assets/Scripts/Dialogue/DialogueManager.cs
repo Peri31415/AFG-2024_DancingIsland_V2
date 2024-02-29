@@ -8,15 +8,11 @@ public class DialogueManager : MonoBehaviour
     public TextMeshProUGUI nameText, dialogueText;
 
     public Animator animator;
-    public MouseLook mouseLook;
-    public PlayerMovement playerMovement;
 
     private Queue<string> sentences; //Look up FIFO collections
     private ObjectDialogue objectDialogue;
 
     bool dialogueOn = false;
-
-    private int i = 0;
 
     void Start()
     {
@@ -86,15 +82,15 @@ public class DialogueManager : MonoBehaviour
 
     private void MouseAndMovementLock()
     {
-        mouseLook.enabled = false;
-        playerMovement.enabled = false;
+        PlayerManager.instance.mouseLook.enabled = false;
+        PlayerManager.instance.playerMovement.enabled = false;
         Cursor.lockState = CursorLockMode.None;        
     }
 
     private void MouseAndMovementUnlock()
     {
-        mouseLook.enabled = true;
-        playerMovement.enabled = true;
+        PlayerManager.instance.mouseLook.enabled = true;
+        PlayerManager.instance.playerMovement.enabled = true;
         Cursor.lockState = CursorLockMode.Locked;        
     }
 }
