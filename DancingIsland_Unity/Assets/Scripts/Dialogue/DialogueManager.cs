@@ -14,7 +14,10 @@ public class DialogueManager : MonoBehaviour
     private Queue<string> sentences; //Look up FIFO collections
     private ObjectDialogue objectDialogue;
 
-    // Start is called before the first frame update
+    bool dialogueOn = false;
+
+    private int i = 0;
+
     void Start()
     {
         sentences = new Queue<string>();
@@ -22,6 +25,8 @@ public class DialogueManager : MonoBehaviour
 
     public void SartDialogue(Dialogue dialogue, ObjectDialogue objectDial)
     {
+        dialogueOn = true;
+        
         objectDialogue = objectDial;
 
         MouseAndMovementLock();
@@ -44,7 +49,7 @@ public class DialogueManager : MonoBehaviour
 
     public void DisplayNextSentence()
     {
-        if (sentences.Count == 0)
+        if (sentences.Count == 0 && dialogueOn == true)
         {
             EndDialogue();
             return;
@@ -71,7 +76,13 @@ public class DialogueManager : MonoBehaviour
     {
         animator.SetBool("IsOpen", false);
 
+        i += 1;
+
+        Debug.Log ("Dialogue Finished Called " + i);
         objectDialogue.DialogueFinished();
+        objectDialogue = null;
+
+        dialogueOn = false;
 
         MouseAndMovementUnlock();
     }

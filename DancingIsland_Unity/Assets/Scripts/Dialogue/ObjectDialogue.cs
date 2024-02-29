@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
+using UnityEditor.Search;
 using UnityEngine;
 
 public class ObjectDialogue : MonoBehaviour
@@ -56,7 +57,7 @@ public class ObjectDialogue : MonoBehaviour
             {
                 toggleConversation.SetActive(true);
 
-                if (Input.GetKey(KeyCode.F))
+                if (Input.GetKey(KeyCode.E))
                 {
                 interactingWith = gameObject.name;
                 TriggerDialogue(DialogueAccordingToGameStage());
@@ -76,7 +77,6 @@ public class ObjectDialogue : MonoBehaviour
     public void DialogueFinished()
     {
         interactingWith = "";
-        //numInteractionsPerStage += 1;
 
         if (this.gameObject == GameObject.FindWithTag("Entity"))
         {            
@@ -89,19 +89,18 @@ public class ObjectDialogue : MonoBehaviour
                     break;
                 case "First Trial Completed":
                     MyGameManager.instance.currentGameStage = "Second Trial";
-                    //MyGameManager.Instance.setFirstTrial;
                     MyGameManager.instance.SetSecondtTrial();
                     numInteractionsPerStage = 0;
                     break;
                 case "Second Trial Completed":
+                    Debug.Log ("Third Trial Active");
                     MyGameManager.instance.currentGameStage = "Third Trial";
-                    //MyGameManager.Instance.setFirstTrial;
                     MyGameManager.instance.SetThirdTrial();
                     numInteractionsPerStage = 0;
                     break;
                 case "Third Trial Completed":
                     MyGameManager.instance.currentGameStage = "Game Finished";
-                    //MyGameManager.Instance.setFirstTrial;
+                    //Enable Won Gui Canvas
                     numInteractionsPerStage = 0;
                     break;            
             }

@@ -83,6 +83,9 @@ public class MyGameManager : MonoBehaviour
     {
         foreach (GameObject obj in thirdTrialObjects)
             obj.gameObject.SetActive(true);
+
+        TrialsManager.instance.trialsTimer.enabled = true;
+        TrialsManager.instance.trialsInfo.text = "Enemies down: ";
     }
 
     public void TrialComplete()
