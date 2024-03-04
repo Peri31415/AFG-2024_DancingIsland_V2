@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="EventFolder" id="{9b835838-9af0-4816-bdad-0d06b51dbb79}">
+		<property name="name">
+			<value>UncoveredIsland</value>
+		</property>
+		<relationship name="folder">
+			<destination>{27bef686-7428-4a22-8872-fb0667241f0d}</destination>
+		</relationship>
+	</object>
+</objects>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="ParameterPreset" id="{8898dabd-8a29-4c7c-a140-c741e8772af1}">
+		<property name="name">
+			<value>GameStage</value>
+		</property>
+		<relationship name="folder">
+			<destination>{fbd3eb98-63ae-4134-afda-cf7fb1cb5a60}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{9c727b8b-c9d5-40b1-acc0-516909d6b257}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{9c727b8b-c9d5-40b1-acc0-516909d6b257}">
+		<property name="parameterType">
+			<value>2</value>
+		</property>
+		<property name="maximum">
+			<value>8</value>
+		</property>
+		<property name="enumerationLabels">
+			<value>Start</value>
+			<value>First Trial</value>
+			<value>First Trial Completed</value>
+			<value>Second Trial</value>
+			<value>Second Trial Completed</value>
+			<value>Third Trial</value>
+			<value>Third Trial Completed</value>
+			<value>Death</value>
+		</property>
+		<property name="isGlobal">
+			<value>true</value>
+		</property>
+		<property name="isReadOnly">
+			<value>true</value>
+		</property>
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+		<property name="isExposedRecursively">
+			<value>false</value>
+		</property>
+	</object>
+</objects>

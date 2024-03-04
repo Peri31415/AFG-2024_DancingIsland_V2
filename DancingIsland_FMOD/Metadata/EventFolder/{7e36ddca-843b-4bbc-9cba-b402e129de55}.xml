@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="EventFolder" id="{7e36ddca-843b-4bbc-9cba-b402e129de55}">
+		<property name="name">
+			<value>FPP</value>
+		</property>
+		<relationship name="folder">
+			<destination>{17538333-127e-4382-83ec-d6d53d93ca0d}</destination>
+		</relationship>
+	</object>
+</objects>

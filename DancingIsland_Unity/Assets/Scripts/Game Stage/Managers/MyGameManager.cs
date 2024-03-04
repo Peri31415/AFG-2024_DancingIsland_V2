@@ -6,8 +6,20 @@ using UnityEngine;
 
 public class MyGameManager : MonoBehaviour
 {
+    #region Singleton
+
     public static MyGameManager instance;
 
+    private void Awake()
+    {
+        if (instance != null && instance != this)
+            Destroy(this);
+        else
+            instance = this;
+    }
+
+    #endregion
+    
     public string currentGameStage = "Start";
 
     public Transform startPlayerPosition;
@@ -16,13 +28,8 @@ public class MyGameManager : MonoBehaviour
 
     [HideInInspector] public int targetCount = 0;
 
-    private void Awake()
+    private void Start() 
     {
-        if (instance != null && instance != this)
-            Destroy(this);
-        else
-            instance = this;
-
         firstTrialObjects = GameObject.FindGameObjectsWithTag("First Trial");
         secondTrialObjects = GameObject.FindGameObjectsWithTag("Second Trial");
         thirdTrialObjects = GameObject.FindGameObjectsWithTag("Third Trial");
@@ -64,7 +71,7 @@ public class MyGameManager : MonoBehaviour
             obj.gameObject.SetActive(false);         
 
         PlayerManager.instance.player.transform.position = startPlayerPosition.position;
-        PlayerManager.instance.player.transform.position = startPlayerPosition.position;
+        //PlayerManager.instance.player.transform.rotation = startPlayerPosition.rotation;
     }
 
     public void SetFirstTrial()

@@ -4,9 +4,6 @@
 		<property name="encodingFormat">
 			<value>3</value>
 		</property>
-		<property name="quality">
-			<value>37</value>
-		</property>
 		<relationship name="platform">
 			<destination>{29389d35-0ff4-4dd8-8f83-5a31d2d6bd25}</destination>
 		</relationship>

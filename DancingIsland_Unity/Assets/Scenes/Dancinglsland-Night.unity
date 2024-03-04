@@ -16075,8 +16075,6 @@ MonoBehaviour:
   nameText: {fileID: 856606769}
   dialogueText: {fileID: 1351882088}
   animator: {fileID: 2138923252}
-  mouseLook: {fileID: 424483395}
-  playerMovement: {fileID: 699303535}
 --- !u!114 &658871829
 MonoBehaviour:
   m_ObjectHideFlags: 0

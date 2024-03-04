@@ -13,7 +13,7 @@ public class PlayerManager : MonoBehaviour
         if (instance != null && instance != this)
             Destroy(this);
         else
-            instance = this;
+            instance = this;        
     }
 
     #endregion
@@ -21,4 +21,9 @@ public class PlayerManager : MonoBehaviour
     public GameObject player, playerCharacter;
     public MouseLook mouseLook;
     public PlayerMovement playerMovement;
+
+    private void Start() 
+    {
+        
+    }
 }
