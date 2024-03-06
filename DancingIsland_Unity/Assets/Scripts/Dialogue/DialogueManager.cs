@@ -9,7 +9,7 @@ public class DialogueManager : MonoBehaviour
 
     public Animator animator;
 
-    private Queue<string> sentences; //Look up FIFO collections
+    private Queue<string> sentences, dialogueKeys; //Look up FIFO collections
     private ObjectDialogue objectDialogue;
 
     bool dialogueOn = false;
@@ -17,6 +17,7 @@ public class DialogueManager : MonoBehaviour
     void Start()
     {
         sentences = new Queue<string>();
+        dialogueKeys = new Queue<string>();
     }
 
     public void SartDialogue(Dialogue dialogue, ObjectDialogue objectDial)
@@ -36,9 +37,10 @@ public class DialogueManager : MonoBehaviour
         sentences.Clear();
 
         foreach (string sentence in dialogue.sentences)
-        {
             sentences.Enqueue(sentence);
-        }
+
+        foreach (string key in dialogue.dialogueKeys)
+            dialogueKeys.Enqueue(key);
 
         DisplayNextSentence();
     }
@@ -53,6 +55,8 @@ public class DialogueManager : MonoBehaviour
         
         string sentence = sentences.Dequeue();
         
+        gameObject.GetComponent<DialogueAudioTrigger>().PlayDialogue(dialogueKeys.Dequeue());
+
         StopAllCoroutines();
         StartCoroutine(TypeSentence(sentence));        
     }

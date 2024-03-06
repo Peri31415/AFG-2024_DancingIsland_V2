@@ -16002,6 +16002,7 @@ GameObject:
   - component: {fileID: 658871827}
   - component: {fileID: 658871828}
   - component: {fileID: 658871825}
+  - component: {fileID: 658871830}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -16091,6 +16092,25 @@ MonoBehaviour:
   playerCharacter: {fileID: 2075674649}
   mouseLook: {fileID: 424483395}
   playerMovement: {fileID: 699303535}
+--- !u!114 &658871830
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 658871822}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08c4b2dcd23204d96a9aba7faf1f86f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EventName:
+    Guid:
+      Data1: 2079544703
+      Data2: 1149750882
+      Data3: 2000983484
+      Data4: -1062185925
+    Path: event:/VO
 --- !u!1001 &660831616
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19671,6 +19691,11 @@ MonoBehaviour:
       trials
     - Prove your observation and your aim in the first of the three. Follow the spehre,
       grab the gun, shoot the targets
+    dialogueKeys:
+    - Entity/Start/vo_entity_start_1
+    - Entity/Start/vo_entity_start_2
+    - Entity/Start/vo_entity_start_3
+    - Entity/Start/vo_entity_start_4
   - name: Entity
     gameStage: First Trial Completed
     numberOfInteraction: 0
@@ -19678,6 +19703,10 @@ MonoBehaviour:
     - Oh my, not bad traveller. You seem keen to want to get off this island
     - You're next dare will take you into the heights
     - "Proof your balance, climb to the top and return back to me. Break a leg\u2026"
+    dialogueKeys:
+    - Entity/FirstTrialCompleted/vo_entity_firstTrialCompleted_1
+    - Entity/FirstTrialCompleted/vo_entity_firstTrialCompleted_2
+    - Entity/FirstTrialCompleted/vo_entity_firstTrialCompleted_3
   - name: Entity
     gameStage: Second Trial Completed
     numberOfInteraction: 0
@@ -19685,6 +19714,10 @@ MonoBehaviour:
     - Oh back so quickly. How did you find it, amusing, right?
     - Now the last thing that stands between you and your freedom is my final challenge
     - Bring the skills you have demonstrated so far and get rid of my minions
+    dialogueKeys:
+    - Entity/SecondTrialCompleted/vo_entity_secondTrialCompleted_1
+    - Entity/SecondTrialCompleted/vo_entity_secondTrialCompleted_2
+    - Entity/SecondTrialCompleted/vo_entity_secondTrialCompleted_3
   - name: Entity
     gameStage: Third Trial Completed
     numberOfInteraction: 0
@@ -19694,6 +19727,11 @@ MonoBehaviour:
     - But we had an agreement, and you have fullfilled your end of the bargain
     - I hereby release you from the confines of my island
     - Farewell traveller
+    dialogueKeys:
+    - Entity/ThirdTrialCompleted/vo_entity_thirdTrialCompleted_1
+    - Entity/ThirdTrialCompleted/vo_entity_thirdTrialCompleted_2
+    - Entity/ThirdTrialCompleted/vo_entity_thirdTrialCompleted_3
+    - Entity/ThirdTrialCompleted/vo_entity_thirdTrialCompleted_4
 --- !u!1 &855046904
 GameObject:
   m_ObjectHideFlags: 0

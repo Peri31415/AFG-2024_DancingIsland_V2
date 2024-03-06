@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="Bank" id="{8520fe49-2cc4-49cb-98d9-242d99751d60}">
+		<property name="name">
+			<value>VO</value>
+		</property>
+		<relationship name="folder">
+			<destination>{b4ac9015-834b-4561-b78b-30acf231b65d}</destination>
+		</relationship>
+		<relationship name="audioTable">
+			<destination>{b4d9e4f0-3bee-4315-8562-99b341865bcc}</destination>
+		</relationship>
+	</object>
+	<object class="AudioTable" id="{b4d9e4f0-3bee-4315-8562-99b341865bcc}">
+		<property name="name">
+			<value>VO</value>
+		</property>
+		<property name="sourceDirectory">
+			<value>../../Resources/AudioAssets/VO</value>
+		</property>
+		<property name="includeSubDirectories">
+			<value>true</value>
+		</property>
+	</object>
+</objects>
