@@ -1,5 +1,130 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8830333201310399561
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Steps/IsRunning
+  m_EditorClassIdentifier: 
+  Name: IsRunning
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 4238714899
+    data2: 397799228
+  Type: 1
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
+--- !u!114 &-6419482154019947298
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/FX/UI/ItemSelectionChanged
+  m_EditorClassIdentifier: 
+  Path: event:/FX/UI/ItemSelectionChanged
+  Guid:
+    Data1: 331860654
+    Data2: 1139704269
+    Data3: 1078756002
+    Data4: -1354849032
+  Banks:
+  - {fileID: 8925866028256063512}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2000
+--- !u!114 &-5725638859974766647
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Ambience.bank
+  m_EditorClassIdentifier: 
+  Path: ../DancingIsland_FMOD/Build/Desktop/Ambience.bank
+  Name: Ambience
+  StudioPath: bank:/Ambience
+  lastModified: 638453731052211188
+  FileSizes:
+  - Name: Desktop
+    Value: 494
+  Exists: 1
+--- !u!114 &-5449732493192880165
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Foley/FPP/Land
+  m_EditorClassIdentifier: 
+  Path: event:/Foley/FPP/Land
+  Guid:
+    Data1: 350818188
+    Data2: 1220007802
+    Data3: 1823121565
+    Data4: 473176443
+  Banks:
+  - {fileID: -2881521778691970790}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-5151417769842492443
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/FX/UI/ButtonPressed
+  m_EditorClassIdentifier: 
+  Path: event:/FX/UI/ButtonPressed
+  Guid:
+    Data1: -1980535853
+    Data2: 1097207167
+    Data3: 819327646
+    Data4: 2089016390
+  Banks:
+  - {fileID: 8925866028256063512}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2000
 --- !u!114 &-4872389010644210200
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15,10 +140,193 @@ MonoBehaviour:
   Path: ../DancingIsland_FMOD/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638448278664556394
+  lastModified: 638453757137892806
   FileSizes:
   - Name: Desktop
-    Value: 712
+    Value: 1640
+  Exists: 1
+--- !u!114 &-3869767974578060122
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/GameStage
+  m_EditorClassIdentifier: 
+  Name: GameStage
+  StudioPath: parameter:/GameStage
+  Min: 0
+  Max: 7
+  Default: 0
+  ID:
+    data1: 3997592919
+    data2: 1665384699
+  Type: 2
+  IsGlobal: 1
+  Labels:
+  - Start
+  - First Trial
+  - First Trial Completed
+  - Second Trial
+  - Second Trial Completed
+  - Third Trial
+  - Third Trial Completed
+  - Death
+  Exists: 1
+--- !u!114 &-3130067237032344815
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VO
+  m_EditorClassIdentifier: 
+  Path: event:/VO
+  Guid:
+    Data1: 2079544703
+    Data2: 1149750882
+    Data3: 2000983484
+    Data4: -1062185925
+  Banks:
+  - {fileID: -2520710635958800819}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-2881521778691970790
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Foley.bank
+  m_EditorClassIdentifier: 
+  Path: ../DancingIsland_FMOD/Build/Desktop/Foley.bank
+  Name: Foley
+  StudioPath: bank:/Foley
+  lastModified: 638453804441315596
+  FileSizes:
+  - Name: Desktop
+    Value: 995968
+  Exists: 1
+--- !u!114 &-2520710635958800819
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/VO.bank
+  m_EditorClassIdentifier: 
+  Path: ../DancingIsland_FMOD/Build/Desktop/VO.bank
+  Name: VO
+  StudioPath: bank:/VO
+  lastModified: 638453731050678026
+  FileSizes:
+  - Name: Desktop
+    Value: 3090624
+  Exists: 1
+--- !u!114 &-2365234551620273307
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/FX/UI/NextMenu
+  m_EditorClassIdentifier: 
+  Path: event:/FX/UI/NextMenu
+  Guid:
+    Data1: 1835073643
+    Data2: 1270967323
+    Data3: -343048813
+    Data4: 946716938
+  Banks:
+  - {fileID: 8925866028256063512}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2000
+--- !u!114 &-2104356915286959397
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Foley/FPP/Jump
+  m_EditorClassIdentifier: 
+  Path: event:/Foley/FPP/Jump
+  Guid:
+    Data1: 1275615169
+    Data2: 1193906343
+    Data3: 1893903551
+    Data4: 824115919
+  Banks:
+  - {fileID: -2881521778691970790}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: 8861858562888815312}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 5000
+--- !u!114 &-812778137852974834
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Steps/MaterialCheck
+  m_EditorClassIdentifier: 
+  Name: MaterialCheck
+  StudioPath: 
+  Min: 0
+  Max: 4
+  Default: 0
+  ID:
+    data1: 826436949
+    data2: 2113130897
+  Type: 2
+  IsGlobal: 1
+  Labels:
+  - Sand
+  - Dirt
+  - Grass
+  - Rock
+  - Wood
   Exists: 1
 --- !u!114 &11400000
 MonoBehaviour:
@@ -35,14 +343,145 @@ MonoBehaviour:
   EditorBanks:
   - {fileID: -4872389010644210200}
   - {fileID: 4148212590488511821}
-  EditorEvents: []
-  EditorParameters: []
+  - {fileID: 8925866028256063512}
+  - {fileID: -2520710635958800819}
+  - {fileID: -5725638859974766647}
+  - {fileID: -2881521778691970790}
+  - {fileID: 6296270291316633276}
+  EditorEvents:
+  - {fileID: -2365234551620273307}
+  - {fileID: 6422696148171151824}
+  - {fileID: -6419482154019947298}
+  - {fileID: -5151417769842492443}
+  - {fileID: 3892805485695651982}
+  - {fileID: 2031023067440151}
+  - {fileID: -3130067237032344815}
+  - {fileID: -5449732493192880165}
+  - {fileID: -2104356915286959397}
+  - {fileID: 5965330943989830567}
+  - {fileID: 3436169291727771846}
+  EditorParameters:
+  - {fileID: -3869767974578060122}
+  - {fileID: 3004933283642803869}
+  - {fileID: 8035681921374946932}
   MasterBanks:
   - {fileID: 4148212590488511821}
   StringsBanks:
   - {fileID: -4872389010644210200}
-  cacheTime: 638448278664556394
+  cacheTime: 638453815288174149
   cacheVersion: 131616
+--- !u!114 &2031023067440151
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/FX/UI/Play
+  m_EditorClassIdentifier: 
+  Path: event:/FX/UI/Play
+  Guid:
+    Data1: -1783602709
+    Data2: 1134439886
+    Data3: -300779631
+    Data4: -1358907908
+  Banks:
+  - {fileID: 8925866028256063512}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &3004933283642803869
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/MaterialCheck
+  m_EditorClassIdentifier: 
+  Name: MaterialCheck
+  StudioPath: parameter:/MaterialCheck
+  Min: 0
+  Max: 4
+  Default: 0
+  ID:
+    data1: 826436949
+    data2: 2113130897
+  Type: 2
+  IsGlobal: 1
+  Labels:
+  - Sand
+  - Dirt
+  - Grass
+  - Rock
+  - Wood
+  Exists: 1
+--- !u!114 &3436169291727771846
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Foley/FPP/Steps
+  m_EditorClassIdentifier: 
+  Path: event:/Foley/FPP/Steps
+  Guid:
+    Data1: 950158333
+    Data2: 1204517932
+    Data3: 1076307100
+    Data4: 1816261603
+  Banks:
+  - {fileID: -2881521778691970790}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -8830333201310399561}
+  - {fileID: -812778137852974834}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 5500
+--- !u!114 &3892805485695651982
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/FX/Spaceship/Spaceship_Crahsed
+  m_EditorClassIdentifier: 
+  Path: event:/FX/Spaceship/Spaceship_Crahsed
+  Guid:
+    Data1: -609510935
+    Data2: 1084115914
+    Data3: 787516810
+    Data4: 344342787
+  Banks:
+  - {fileID: 8925866028256063512}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 23041
 --- !u!114 &4148212590488511821
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -58,8 +497,155 @@ MonoBehaviour:
   Path: ../DancingIsland_FMOD/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638448278664553009
+  lastModified: 638453757137888724
   FileSizes:
   - Name: Desktop
-    Value: 1036
+    Value: 1730
+  Exists: 1
+--- !u!114 &5965330943989830567
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Foley/FPP/Vestment
+  m_EditorClassIdentifier: 
+  Path: event:/Foley/FPP/Vestment
+  Guid:
+    Data1: -1291217973
+    Data2: 1238197835
+    Data3: 337925557
+    Data4: 1511517653
+  Banks:
+  - {fileID: -2881521778691970790}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1000
+--- !u!114 &6296270291316633276
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Music.bank
+  m_EditorClassIdentifier: 
+  Path: ../DancingIsland_FMOD/Build/Desktop/Music.bank
+  Name: Music
+  StudioPath: bank:/Music
+  lastModified: 638453731052215515
+  FileSizes:
+  - Name: Desktop
+    Value: 494
+  Exists: 1
+--- !u!114 &6422696148171151824
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/FX/UI/Quit
+  m_EditorClassIdentifier: 
+  Path: event:/FX/UI/Quit
+  Guid:
+    Data1: -1618842493
+    Data2: 1206266896
+    Data3: 188459410
+    Data4: 1044388793
+  Banks:
+  - {fileID: 8925866028256063512}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &8035681921374946932
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/IsRunning
+  m_EditorClassIdentifier: 
+  Name: IsRunning
+  StudioPath: parameter:/IsRunning
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 4238714899
+    data2: 397799228
+  Type: 1
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
+--- !u!114 &8861858562888815312
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Jump/MaterialCheck
+  m_EditorClassIdentifier: 
+  Name: MaterialCheck
+  StudioPath: 
+  Min: 0
+  Max: 4
+  Default: 0
+  ID:
+    data1: 826436949
+    data2: 2113130897
+  Type: 2
+  IsGlobal: 1
+  Labels:
+  - Sand
+  - Dirt
+  - Grass
+  - Rock
+  - Wood
+  Exists: 1
+--- !u!114 &8925866028256063512
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/FX.bank
+  m_EditorClassIdentifier: 
+  Path: ../DancingIsland_FMOD/Build/Desktop/FX.bank
+  Name: FX
+  StudioPath: bank:/FX
+  lastModified: 638453815288174149
+  FileSizes:
+  - Name: Desktop
+    Value: 715488
   Exists: 1

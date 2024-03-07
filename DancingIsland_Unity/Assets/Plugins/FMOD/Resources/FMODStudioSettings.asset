@@ -478,6 +478,10 @@ MonoBehaviour:
   MasterBanks:
   - Master
   Banks:
+  - Ambience
+  - Foley
+  - FX
+  - Music
   - VO
   BanksToLoad: []
   LiveUpdatePort: 9264
@@ -754,8 +758,8 @@ MonoBehaviour:
       Value: 1
       HasValue: 1
     LiveUpdatePort:
-      Value: 0
-      HasValue: 0
+      Value: 9264
+      HasValue: 1
     Overlay:
       Value: 1
       HasValue: 1

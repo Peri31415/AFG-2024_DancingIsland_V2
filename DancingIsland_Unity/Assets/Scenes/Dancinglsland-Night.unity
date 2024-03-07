@@ -312,6 +312,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5127935813079523073, guid: b0caf8f2b511ed948be263d59a83cd1c,
         type: 3}
+      propertyPath: m_TagString
+      value: Material_Rock
+      objectReference: {fileID: 0}
+    - target: {fileID: 5127935813079523073, guid: b0caf8f2b511ed948be263d59a83cd1c,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -405,6 +410,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PA_RockSet1_Pile6 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1087727138527155070, guid: 6bf8783a9e4bced489d2f62821a6ff92,
+        type: 3}
+      propertyPath: m_TagString
+      value: Material_Rock
       objectReference: {fileID: 0}
     - target: {fileID: 1087727138527155070, guid: 6bf8783a9e4bced489d2f62821a6ff92,
         type: 3}
@@ -816,6 +826,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PA_mountainset2_hill2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3093721036553623279, guid: 25abdf0df20e34d438180f8e6ee580ef,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3093721036553623279, guid: 25abdf0df20e34d438180f8e6ee580ef,
+        type: 3}
+      propertyPath: m_TagString
+      value: Material_Rock
       objectReference: {fileID: 0}
     - target: {fileID: 3093721036553623279, guid: 25abdf0df20e34d438180f8e6ee580ef,
         type: 3}
@@ -1305,6 +1325,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PA_RockSet1_Pile3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8736115590795592677, guid: 26ff2760dcd37464996eaee30729de1b,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8736115590795592677, guid: 26ff2760dcd37464996eaee30729de1b,
+        type: 3}
+      propertyPath: m_TagString
+      value: Material_Rock
       objectReference: {fileID: 0}
     - target: {fileID: 8736115590795592677, guid: 26ff2760dcd37464996eaee30729de1b,
         type: 3}
@@ -1853,6 +1883,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7585680766149070454, guid: c8829fa2ecdc9fb44ad80d79ee74afc9,
         type: 3}
+      propertyPath: m_TagString
+      value: Material_Rock
+      objectReference: {fileID: 0}
+    - target: {fileID: 7585680766149070454, guid: c8829fa2ecdc9fb44ad80d79ee74afc9,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -1932,6 +1967,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PA_mountainset2_hill4 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3871325792937071460, guid: ef71cb488ba16b74eaf2162875b5cfe1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3871325792937071460, guid: ef71cb488ba16b74eaf2162875b5cfe1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Material_Rock
       objectReference: {fileID: 0}
     - target: {fileID: 3871325792937071460, guid: ef71cb488ba16b74eaf2162875b5cfe1,
         type: 3}
@@ -2086,6 +2131,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PA_GroundAssetset_boat1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3171433210945445479, guid: dd99a0e1bf0f5f247aa5cbc8b9473984,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3171433210945445479, guid: dd99a0e1bf0f5f247aa5cbc8b9473984,
         type: 3}
@@ -2583,6 +2633,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1087727138527155070, guid: 6bf8783a9e4bced489d2f62821a6ff92,
         type: 3}
+      propertyPath: m_TagString
+      value: Material_Rock
+      objectReference: {fileID: 0}
+    - target: {fileID: 1087727138527155070, guid: 6bf8783a9e4bced489d2f62821a6ff92,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -2742,6 +2797,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PA_Mountainset1_hill3 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1884919484591832324, guid: 5e02c28cda3c5c043a8d1a459a3c56fc,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1884919484591832324, guid: 5e02c28cda3c5c043a8d1a459a3c56fc,
+        type: 3}
+      propertyPath: m_TagString
+      value: Material_Rock
       objectReference: {fileID: 0}
     - target: {fileID: 1884919484591832324, guid: 5e02c28cda3c5c043a8d1a459a3c56fc,
         type: 3}
@@ -3228,6 +3293,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PA_mountainset2_hill1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4730002974124194558, guid: 205dc750c0f1a414097299b0486dc5b9,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4730002974124194558, guid: 205dc750c0f1a414097299b0486dc5b9,
+        type: 3}
+      propertyPath: m_TagString
+      value: Material_Rock
       objectReference: {fileID: 0}
     - target: {fileID: 4730002974124194558, guid: 205dc750c0f1a414097299b0486dc5b9,
         type: 3}
@@ -4044,6 +4119,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9120426635959654188, guid: 110ab91f45d8a214a8062042ed7b6841,
         type: 3}
+      propertyPath: m_TagString
+      value: Material_Rock
+      objectReference: {fileID: 0}
+    - target: {fileID: 9120426635959654188, guid: 110ab91f45d8a214a8062042ed7b6841,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -4557,6 +4637,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9120426635959654188, guid: 110ab91f45d8a214a8062042ed7b6841,
         type: 3}
+      propertyPath: m_TagString
+      value: Material_Rock
+      objectReference: {fileID: 0}
+    - target: {fileID: 9120426635959654188, guid: 110ab91f45d8a214a8062042ed7b6841,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -4679,6 +4764,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PA_RockSet1_Pile1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5127935813079523073, guid: b0caf8f2b511ed948be263d59a83cd1c,
+        type: 3}
+      propertyPath: m_TagString
+      value: Material_Rock
       objectReference: {fileID: 0}
     - target: {fileID: 5127935813079523073, guid: b0caf8f2b511ed948be263d59a83cd1c,
         type: 3}
@@ -4818,6 +4908,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PA_GroundAssetset_boat1 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3171433210945445479, guid: dd99a0e1bf0f5f247aa5cbc8b9473984,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3171433210945445479, guid: dd99a0e1bf0f5f247aa5cbc8b9473984,
         type: 3}
@@ -11759,6 +11854,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7965692035863089286, guid: b8c1ed278e5882e4aafbe094be466a4f,
         type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7965692035863089286, guid: b8c1ed278e5882e4aafbe094be466a4f,
+        type: 3}
+      propertyPath: m_TagString
+      value: Material_Rock
+      objectReference: {fileID: 0}
+    - target: {fileID: 7965692035863089286, guid: b8c1ed278e5882e4aafbe094be466a4f,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -12452,6 +12557,7 @@ GameObject:
   - component: {fileID: 424483393}
   - component: {fileID: 424483392}
   - component: {fileID: 424483391}
+  - component: {fileID: 424483396}
   - component: {fileID: 424483395}
   m_Layer: 0
   m_Name: Camera
@@ -12593,6 +12699,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mouseSensitivity: 200
   playerBody: {fileID: 699303534}
+--- !u!114 &424483396
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 424483390}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attenuationObject: {fileID: 0}
 --- !u!1001 &427359887
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12660,6 +12779,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PA_RockSet1_Pile3 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8736115590795592677, guid: 26ff2760dcd37464996eaee30729de1b,
+        type: 3}
+      propertyPath: m_TagString
+      value: Material_Rock
       objectReference: {fileID: 0}
     - target: {fileID: 8736115590795592677, guid: 26ff2760dcd37464996eaee30729de1b,
         type: 3}
@@ -12941,6 +13065,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PA_Mountainset1_hill2 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7938968293588628369, guid: cae80e7e19b93014d81c2b7b4e200e69,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7938968293588628369, guid: cae80e7e19b93014d81c2b7b4e200e69,
+        type: 3}
+      propertyPath: m_TagString
+      value: Material_Rock
       objectReference: {fileID: 0}
     - target: {fileID: 7938968293588628369, guid: cae80e7e19b93014d81c2b7b4e200e69,
         type: 3}
@@ -13233,6 +13367,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PA_RockSet1_Pile6 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1087727138527155070, guid: 6bf8783a9e4bced489d2f62821a6ff92,
+        type: 3}
+      propertyPath: m_TagString
+      value: Material_Rock
       objectReference: {fileID: 0}
     - target: {fileID: 1087727138527155070, guid: 6bf8783a9e4bced489d2f62821a6ff92,
         type: 3}
@@ -13935,6 +14074,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3871325792937071460, guid: ef71cb488ba16b74eaf2162875b5cfe1,
         type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3871325792937071460, guid: ef71cb488ba16b74eaf2162875b5cfe1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Material_Rock
+      objectReference: {fileID: 0}
+    - target: {fileID: 3871325792937071460, guid: ef71cb488ba16b74eaf2162875b5cfe1,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -14013,6 +14162,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8736115590795592677, guid: 26ff2760dcd37464996eaee30729de1b,
         type: 3}
+      propertyPath: m_TagString
+      value: Material_Rock
+      objectReference: {fileID: 0}
+    - target: {fileID: 8736115590795592677, guid: 26ff2760dcd37464996eaee30729de1b,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -14040,7 +14194,7 @@ GameObject:
   - component: {fileID: 528974423}
   m_Layer: 6
   m_Name: TerrainMesh
-  m_TagString: Untagged
+  m_TagString: Material_Sand
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -14380,6 +14534,59 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 556131160}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &557533304
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 557533305}
+  - component: {fileID: 557533306}
+  m_Layer: 6
+  m_Name: Material_Dirt
+  m_TagString: Material_Dirt
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &557533305
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 557533304}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 230, y: 43.9, z: 200}
+  m_LocalScale: {x: 1, y: 0.05, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1444708280}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &557533306
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 557533304}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 0
+  serializedVersion: 3
+  m_Size: {x: 32.142517, y: 1.0000305, z: 4.8939095}
+  m_Center: {x: -3.437912, y: -0.000015236437, z: 0.16018867}
 --- !u!1001 &567684486
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15113,6 +15320,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7855577534021383252, guid: 84b21cd9c885ed4489cd82a8d1e76404,
         type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7855577534021383252, guid: 84b21cd9c885ed4489cd82a8d1e76404,
+        type: 3}
+      propertyPath: m_TagString
+      value: Material_Rock
+      objectReference: {fileID: 0}
+    - target: {fileID: 7855577534021383252, guid: 84b21cd9c885ed4489cd82a8d1e76404,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -15461,6 +15678,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7315495681761875088, guid: fe666a9f165fbd54e8c1c94e5dc97844,
         type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7315495681761875088, guid: fe666a9f165fbd54e8c1c94e5dc97844,
+        type: 3}
+      propertyPath: m_TagString
+      value: Material_Rock
+      objectReference: {fileID: 0}
+    - target: {fileID: 7315495681761875088, guid: fe666a9f165fbd54e8c1c94e5dc97844,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -15580,6 +15807,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PA_Mountainset1_hill3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1884919484591832324, guid: 5e02c28cda3c5c043a8d1a459a3c56fc,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1884919484591832324, guid: 5e02c28cda3c5c043a8d1a459a3c56fc,
+        type: 3}
+      propertyPath: m_TagString
+      value: Material_Rock
       objectReference: {fileID: 0}
     - target: {fileID: 1884919484591832324, guid: 5e02c28cda3c5c043a8d1a459a3c56fc,
         type: 3}
@@ -15734,6 +15971,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PA_RockSet1_Pile7
+      objectReference: {fileID: 0}
+    - target: {fileID: 3059856665834797793, guid: bb96a129de5586241a425d6bcf8f1f6f,
+        type: 3}
+      propertyPath: m_TagString
+      value: Material_Rock
       objectReference: {fileID: 0}
     - target: {fileID: 3059856665834797793, guid: bb96a129de5586241a425d6bcf8f1f6f,
         type: 3}
@@ -16302,6 +16544,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PA_RockSet1_Pile3 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8736115590795592677, guid: 26ff2760dcd37464996eaee30729de1b,
+        type: 3}
+      propertyPath: m_TagString
+      value: Material_Rock
       objectReference: {fileID: 0}
     - target: {fileID: 8736115590795592677, guid: 26ff2760dcd37464996eaee30729de1b,
         type: 3}
@@ -16910,6 +17157,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5127935813079523073, guid: b0caf8f2b511ed948be263d59a83cd1c,
         type: 3}
+      propertyPath: m_TagString
+      value: Material_Rock
+      objectReference: {fileID: 0}
+    - target: {fileID: 5127935813079523073, guid: b0caf8f2b511ed948be263d59a83cd1c,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -17304,6 +17556,8 @@ GameObject:
   m_Component:
   - component: {fileID: 699303534}
   - component: {fileID: 699303533}
+  - component: {fileID: 699303538}
+  - component: {fileID: 699303536}
   - component: {fileID: 699303535}
   m_Layer: 0
   m_Name: FirstPersonPlayer
@@ -17378,6 +17632,49 @@ MonoBehaviour:
   groundMask:
     serializedVersion: 2
     m_Bits: 64
+--- !u!114 &699303536
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 699303532}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58c5bb4566f1243b99bf19305d15d848, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &699303538
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 699303532}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 950158333
+      Data2: 1204517932
+      Data3: 1076307100
+      Data4: 1816261603
+    Path: event:/Foley/FPP/Steps
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &712469734
 GameObject:
   m_ObjectHideFlags: 0
@@ -17644,6 +17941,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9120426635959654188, guid: 110ab91f45d8a214a8062042ed7b6841,
         type: 3}
+      propertyPath: m_TagString
+      value: Material_Rock
+      objectReference: {fileID: 0}
+    - target: {fileID: 9120426635959654188, guid: 110ab91f45d8a214a8062042ed7b6841,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -17751,6 +18053,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PA_RockSet1_Pile3 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8736115590795592677, guid: 26ff2760dcd37464996eaee30729de1b,
+        type: 3}
+      propertyPath: m_TagString
+      value: Material_Rock
       objectReference: {fileID: 0}
     - target: {fileID: 8736115590795592677, guid: 26ff2760dcd37464996eaee30729de1b,
         type: 3}
@@ -18241,6 +18548,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3171433210945445479, guid: dd99a0e1bf0f5f247aa5cbc8b9473984,
         type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3171433210945445479, guid: dd99a0e1bf0f5f247aa5cbc8b9473984,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -18296,6 +18608,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PA_RockSet1_Pile1 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5127935813079523073, guid: b0caf8f2b511ed948be263d59a83cd1c,
+        type: 3}
+      propertyPath: m_TagString
+      value: Material_Rock
       objectReference: {fileID: 0}
     - target: {fileID: 5127935813079523073, guid: b0caf8f2b511ed948be263d59a83cd1c,
         type: 3}
@@ -18438,6 +18755,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3497825398378072962, guid: 0364b6d6608ccec43a15f0fd7290ccb1,
         type: 3}
+      propertyPath: m_TagString
+      value: Material_Rock
+      objectReference: {fileID: 0}
+    - target: {fileID: 3497825398378072962, guid: 0364b6d6608ccec43a15f0fd7290ccb1,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -18539,6 +18861,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7938968293588628369, guid: cae80e7e19b93014d81c2b7b4e200e69,
         type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7938968293588628369, guid: cae80e7e19b93014d81c2b7b4e200e69,
+        type: 3}
+      propertyPath: m_TagString
+      value: Material_Rock
+      objectReference: {fileID: 0}
+    - target: {fileID: 7938968293588628369, guid: cae80e7e19b93014d81c2b7b4e200e69,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -18594,6 +18926,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PA_RockSet2_Pile4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2127669762736421172, guid: b74080c501552fd4c9970add9fc707fa,
+        type: 3}
+      propertyPath: m_TagString
+      value: Material_Rock
       objectReference: {fileID: 0}
     - target: {fileID: 2127669762736421172, guid: b74080c501552fd4c9970add9fc707fa,
         type: 3}
@@ -18843,6 +19180,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PA_RockSet1_Pile3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8736115590795592677, guid: 26ff2760dcd37464996eaee30729de1b,
+        type: 3}
+      propertyPath: m_TagString
+      value: Material_Rock
       objectReference: {fileID: 0}
     - target: {fileID: 8736115590795592677, guid: 26ff2760dcd37464996eaee30729de1b,
         type: 3}
@@ -19247,6 +19589,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PA_Mountainset1_hill1 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9069872863127178892, guid: 2c4ada107f11c85428cf29b036419497,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 9069872863127178892, guid: 2c4ada107f11c85428cf29b036419497,
+        type: 3}
+      propertyPath: m_TagString
+      value: Material_Rock
       objectReference: {fileID: 0}
     - target: {fileID: 9069872863127178892, guid: 2c4ada107f11c85428cf29b036419497,
         type: 3}
@@ -19766,6 +20118,7 @@ Transform:
   - {fileID: 201660933}
   - {fileID: 1123152657}
   - {fileID: 128829735}
+  - {fileID: 2119072059}
   m_Father: {fileID: 1733330691}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &855691379
@@ -20304,6 +20657,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PA_RockSet1_Pile6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1087727138527155070, guid: 6bf8783a9e4bced489d2f62821a6ff92,
+        type: 3}
+      propertyPath: m_TagString
+      value: Material_Rock
       objectReference: {fileID: 0}
     - target: {fileID: 1087727138527155070, guid: 6bf8783a9e4bced489d2f62821a6ff92,
         type: 3}
@@ -20889,6 +21247,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3093721036553623279, guid: 25abdf0df20e34d438180f8e6ee580ef,
         type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3093721036553623279, guid: 25abdf0df20e34d438180f8e6ee580ef,
+        type: 3}
+      propertyPath: m_TagString
+      value: Material_Rock
+      objectReference: {fileID: 0}
+    - target: {fileID: 3093721036553623279, guid: 25abdf0df20e34d438180f8e6ee580ef,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -21139,6 +21507,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PA_RockSet1_Pile1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5127935813079523073, guid: b0caf8f2b511ed948be263d59a83cd1c,
+        type: 3}
+      propertyPath: m_TagString
+      value: Material_Rock
       objectReference: {fileID: 0}
     - target: {fileID: 5127935813079523073, guid: b0caf8f2b511ed948be263d59a83cd1c,
         type: 3}
@@ -21452,6 +21825,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7855577534021383252, guid: 84b21cd9c885ed4489cd82a8d1e76404,
         type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7855577534021383252, guid: 84b21cd9c885ed4489cd82a8d1e76404,
+        type: 3}
+      propertyPath: m_TagString
+      value: Material_Rock
+      objectReference: {fileID: 0}
+    - target: {fileID: 7855577534021383252, guid: 84b21cd9c885ed4489cd82a8d1e76404,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -21559,6 +21942,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PA_RockSet1_Pile4
+      objectReference: {fileID: 0}
+    - target: {fileID: 9120426635959654188, guid: 110ab91f45d8a214a8062042ed7b6841,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 9120426635959654188, guid: 110ab91f45d8a214a8062042ed7b6841,
+        type: 3}
+      propertyPath: m_TagString
+      value: Material_Rock
       objectReference: {fileID: 0}
     - target: {fileID: 9120426635959654188, guid: 110ab91f45d8a214a8062042ed7b6841,
         type: 3}
@@ -21905,6 +22298,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4730002974124194558, guid: 205dc750c0f1a414097299b0486dc5b9,
         type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4730002974124194558, guid: 205dc750c0f1a414097299b0486dc5b9,
+        type: 3}
+      propertyPath: m_TagString
+      value: Material_Rock
+      objectReference: {fileID: 0}
+    - target: {fileID: 4730002974124194558, guid: 205dc750c0f1a414097299b0486dc5b9,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -22047,6 +22450,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PA_mountainset2_hill2 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3093721036553623279, guid: 25abdf0df20e34d438180f8e6ee580ef,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3093721036553623279, guid: 25abdf0df20e34d438180f8e6ee580ef,
+        type: 3}
+      propertyPath: m_TagString
+      value: Material_Rock
       objectReference: {fileID: 0}
     - target: {fileID: 3093721036553623279, guid: 25abdf0df20e34d438180f8e6ee580ef,
         type: 3}
@@ -22665,6 +23078,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9069872863127178892, guid: 2c4ada107f11c85428cf29b036419497,
         type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 9069872863127178892, guid: 2c4ada107f11c85428cf29b036419497,
+        type: 3}
+      propertyPath: m_TagString
+      value: Material_Rock
+      objectReference: {fileID: 0}
+    - target: {fileID: 9069872863127178892, guid: 2c4ada107f11c85428cf29b036419497,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -23227,6 +23650,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PA_RockSet1_Pile6 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1087727138527155070, guid: 6bf8783a9e4bced489d2f62821a6ff92,
+        type: 3}
+      propertyPath: m_TagString
+      value: Material_Rock
       objectReference: {fileID: 0}
     - target: {fileID: 1087727138527155070, guid: 6bf8783a9e4bced489d2f62821a6ff92,
         type: 3}
@@ -30735,6 +31163,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4730002974124194558, guid: 205dc750c0f1a414097299b0486dc5b9,
         type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4730002974124194558, guid: 205dc750c0f1a414097299b0486dc5b9,
+        type: 3}
+      propertyPath: m_TagString
+      value: Material_Rock
+      objectReference: {fileID: 0}
+    - target: {fileID: 4730002974124194558, guid: 205dc750c0f1a414097299b0486dc5b9,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -31191,6 +31629,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PA_mountainset2_hill3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7315495681761875088, guid: fe666a9f165fbd54e8c1c94e5dc97844,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7315495681761875088, guid: fe666a9f165fbd54e8c1c94e5dc97844,
+        type: 3}
+      propertyPath: m_TagString
+      value: Material_Rock
       objectReference: {fileID: 0}
     - target: {fileID: 7315495681761875088, guid: fe666a9f165fbd54e8c1c94e5dc97844,
         type: 3}
@@ -32156,6 +32604,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3093721036553623279, guid: 25abdf0df20e34d438180f8e6ee580ef,
         type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3093721036553623279, guid: 25abdf0df20e34d438180f8e6ee580ef,
+        type: 3}
+      propertyPath: m_TagString
+      value: Material_Rock
+      objectReference: {fileID: 0}
+    - target: {fileID: 3093721036553623279, guid: 25abdf0df20e34d438180f8e6ee580ef,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -32743,6 +33201,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PA_mountainset2_hill2 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3093721036553623279, guid: 25abdf0df20e34d438180f8e6ee580ef,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3093721036553623279, guid: 25abdf0df20e34d438180f8e6ee580ef,
+        type: 3}
+      propertyPath: m_TagString
+      value: Material_Rock
       objectReference: {fileID: 0}
     - target: {fileID: 3093721036553623279, guid: 25abdf0df20e34d438180f8e6ee580ef,
         type: 3}
@@ -33415,6 +33883,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9120426635959654188, guid: 110ab91f45d8a214a8062042ed7b6841,
         type: 3}
+      propertyPath: m_TagString
+      value: Material_Rock
+      objectReference: {fileID: 0}
+    - target: {fileID: 9120426635959654188, guid: 110ab91f45d8a214a8062042ed7b6841,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -33588,6 +34061,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PA_Mountainset1_hill1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9069872863127178892, guid: 2c4ada107f11c85428cf29b036419497,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 9069872863127178892, guid: 2c4ada107f11c85428cf29b036419497,
+        type: 3}
+      propertyPath: m_TagString
+      value: Material_Rock
       objectReference: {fileID: 0}
     - target: {fileID: 9069872863127178892, guid: 2c4ada107f11c85428cf29b036419497,
         type: 3}
@@ -34064,6 +34547,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8736115590795592677, guid: 26ff2760dcd37464996eaee30729de1b,
         type: 3}
+      propertyPath: m_TagString
+      value: Material_Rock
+      objectReference: {fileID: 0}
+    - target: {fileID: 8736115590795592677, guid: 26ff2760dcd37464996eaee30729de1b,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -34354,6 +34842,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PA_Mountainset1_hill1 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9069872863127178892, guid: 2c4ada107f11c85428cf29b036419497,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 9069872863127178892, guid: 2c4ada107f11c85428cf29b036419497,
+        type: 3}
+      propertyPath: m_TagString
+      value: Material_Rock
       objectReference: {fileID: 0}
     - target: {fileID: 9069872863127178892, guid: 2c4ada107f11c85428cf29b036419497,
         type: 3}
@@ -35066,6 +35564,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7938968293588628369, guid: cae80e7e19b93014d81c2b7b4e200e69,
         type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7938968293588628369, guid: cae80e7e19b93014d81c2b7b4e200e69,
+        type: 3}
+      propertyPath: m_TagString
+      value: Material_Rock
+      objectReference: {fileID: 0}
+    - target: {fileID: 7938968293588628369, guid: cae80e7e19b93014d81c2b7b4e200e69,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -35593,6 +36101,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4730002974124194558, guid: 205dc750c0f1a414097299b0486dc5b9,
         type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4730002974124194558, guid: 205dc750c0f1a414097299b0486dc5b9,
+        type: 3}
+      propertyPath: m_TagString
+      value: Material_Rock
+      objectReference: {fileID: 0}
+    - target: {fileID: 4730002974124194558, guid: 205dc750c0f1a414097299b0486dc5b9,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -36097,6 +36615,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3059856665834797793, guid: bb96a129de5586241a425d6bcf8f1f6f,
         type: 3}
+      propertyPath: m_TagString
+      value: Material_Rock
+      objectReference: {fileID: 0}
+    - target: {fileID: 3059856665834797793, guid: bb96a129de5586241a425d6bcf8f1f6f,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -36257,6 +36780,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7315495681761875088, guid: fe666a9f165fbd54e8c1c94e5dc97844,
         type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7315495681761875088, guid: fe666a9f165fbd54e8c1c94e5dc97844,
+        type: 3}
+      propertyPath: m_TagString
+      value: Material_Rock
+      objectReference: {fileID: 0}
+    - target: {fileID: 7315495681761875088, guid: fe666a9f165fbd54e8c1c94e5dc97844,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -36338,6 +36871,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PA_RockSet2_Pile1 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4225483189274242658, guid: 73793fc1c8a9f624bb3f5ff90269b349,
+        type: 3}
+      propertyPath: m_TagString
+      value: Material_Rock
       objectReference: {fileID: 0}
     - target: {fileID: 4225483189274242658, guid: 73793fc1c8a9f624bb3f5ff90269b349,
         type: 3}
@@ -36460,6 +36998,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PA_mountainset2_hill4 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3871325792937071460, guid: ef71cb488ba16b74eaf2162875b5cfe1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3871325792937071460, guid: ef71cb488ba16b74eaf2162875b5cfe1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Material_Rock
       objectReference: {fileID: 0}
     - target: {fileID: 3871325792937071460, guid: ef71cb488ba16b74eaf2162875b5cfe1,
         type: 3}
@@ -36872,6 +37420,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 528974422}
+  - {fileID: 557533305}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1446220468 stripped
@@ -37078,6 +37627,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7315495681761875088, guid: fe666a9f165fbd54e8c1c94e5dc97844,
         type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7315495681761875088, guid: fe666a9f165fbd54e8c1c94e5dc97844,
+        type: 3}
+      propertyPath: m_TagString
+      value: Material_Rock
+      objectReference: {fileID: 0}
+    - target: {fileID: 7315495681761875088, guid: fe666a9f165fbd54e8c1c94e5dc97844,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -37159,6 +37718,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PA_RockSet1_Pile5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3497825398378072962, guid: 0364b6d6608ccec43a15f0fd7290ccb1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Material_Rock
       objectReference: {fileID: 0}
     - target: {fileID: 3497825398378072962, guid: 0364b6d6608ccec43a15f0fd7290ccb1,
         type: 3}
@@ -37847,6 +38411,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PA_Mountainset1_hill3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1884919484591832324, guid: 5e02c28cda3c5c043a8d1a459a3c56fc,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1884919484591832324, guid: 5e02c28cda3c5c043a8d1a459a3c56fc,
+        type: 3}
+      propertyPath: m_TagString
+      value: Material_Rock
       objectReference: {fileID: 0}
     - target: {fileID: 1884919484591832324, guid: 5e02c28cda3c5c043a8d1a459a3c56fc,
         type: 3}
@@ -39307,6 +39881,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3171433210945445479, guid: dd99a0e1bf0f5f247aa5cbc8b9473984,
         type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3171433210945445479, guid: dd99a0e1bf0f5f247aa5cbc8b9473984,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -39516,6 +40095,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7965692035863089286, guid: b8c1ed278e5882e4aafbe094be466a4f,
         type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7965692035863089286, guid: b8c1ed278e5882e4aafbe094be466a4f,
+        type: 3}
+      propertyPath: m_TagString
+      value: Material_Rock
+      objectReference: {fileID: 0}
+    - target: {fileID: 7965692035863089286, guid: b8c1ed278e5882e4aafbe094be466a4f,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -39597,6 +40186,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PA_mountainset2_hill4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3871325792937071460, guid: ef71cb488ba16b74eaf2162875b5cfe1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3871325792937071460, guid: ef71cb488ba16b74eaf2162875b5cfe1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Material_Rock
       objectReference: {fileID: 0}
     - target: {fileID: 3871325792937071460, guid: ef71cb488ba16b74eaf2162875b5cfe1,
         type: 3}
@@ -40207,6 +40806,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PA_mountainset2_hill4 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3871325792937071460, guid: ef71cb488ba16b74eaf2162875b5cfe1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3871325792937071460, guid: ef71cb488ba16b74eaf2162875b5cfe1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Material_Rock
       objectReference: {fileID: 0}
     - target: {fileID: 3871325792937071460, guid: ef71cb488ba16b74eaf2162875b5cfe1,
         type: 3}
@@ -41580,6 +42189,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5127935813079523073, guid: b0caf8f2b511ed948be263d59a83cd1c,
         type: 3}
+      propertyPath: m_TagString
+      value: Material_Rock
+      objectReference: {fileID: 0}
+    - target: {fileID: 5127935813079523073, guid: b0caf8f2b511ed948be263d59a83cd1c,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -42134,6 +42748,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PA_RockSet1_Pile6 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1087727138527155070, guid: 6bf8783a9e4bced489d2f62821a6ff92,
+        type: 3}
+      propertyPath: m_TagString
+      value: Material_Rock
       objectReference: {fileID: 0}
     - target: {fileID: 1087727138527155070, guid: 6bf8783a9e4bced489d2f62821a6ff92,
         type: 3}
@@ -43354,6 +43973,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3171433210945445479, guid: dd99a0e1bf0f5f247aa5cbc8b9473984,
         type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3171433210945445479, guid: dd99a0e1bf0f5f247aa5cbc8b9473984,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -43914,6 +44538,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4843999867478762620, guid: 55d0cf9201b2ac8418490124e17fb500,
         type: 3}
+      propertyPath: m_TagString
+      value: Material_Rock
+      objectReference: {fileID: 0}
+    - target: {fileID: 4843999867478762620, guid: 55d0cf9201b2ac8418490124e17fb500,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -44081,6 +44710,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PA_Mountainset1_hill2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7938968293588628369, guid: cae80e7e19b93014d81c2b7b4e200e69,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7938968293588628369, guid: cae80e7e19b93014d81c2b7b4e200e69,
+        type: 3}
+      propertyPath: m_TagString
+      value: Material_Rock
       objectReference: {fileID: 0}
     - target: {fileID: 7938968293588628369, guid: cae80e7e19b93014d81c2b7b4e200e69,
         type: 3}
@@ -44498,6 +45137,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9069872863127178892, guid: 2c4ada107f11c85428cf29b036419497,
         type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 9069872863127178892, guid: 2c4ada107f11c85428cf29b036419497,
+        type: 3}
+      propertyPath: m_TagString
+      value: Material_Rock
+      objectReference: {fileID: 0}
+    - target: {fileID: 9069872863127178892, guid: 2c4ada107f11c85428cf29b036419497,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -44813,6 +45462,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2127669762736421172, guid: b74080c501552fd4c9970add9fc707fa,
         type: 3}
+      propertyPath: m_TagString
+      value: Material_Rock
+      objectReference: {fileID: 0}
+    - target: {fileID: 2127669762736421172, guid: b74080c501552fd4c9970add9fc707fa,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -45092,6 +45746,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9069872863127178892, guid: 2c4ada107f11c85428cf29b036419497,
         type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 9069872863127178892, guid: 2c4ada107f11c85428cf29b036419497,
+        type: 3}
+      propertyPath: m_TagString
+      value: Material_Rock
+      objectReference: {fileID: 0}
+    - target: {fileID: 9069872863127178892, guid: 2c4ada107f11c85428cf29b036419497,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -45176,6 +45840,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PA_Mountainset1_hill6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6109584029528417258, guid: ba5491d12af7b764793c828e273c168b,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6109584029528417258, guid: ba5491d12af7b764793c828e273c168b,
+        type: 3}
+      propertyPath: m_TagString
+      value: Material_Rock
       objectReference: {fileID: 0}
     - target: {fileID: 6109584029528417258, guid: ba5491d12af7b764793c828e273c168b,
         type: 3}
@@ -46010,6 +46684,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7938968293588628369, guid: cae80e7e19b93014d81c2b7b4e200e69,
         type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7938968293588628369, guid: cae80e7e19b93014d81c2b7b4e200e69,
+        type: 3}
+      propertyPath: m_TagString
+      value: Material_Rock
+      objectReference: {fileID: 0}
+    - target: {fileID: 7938968293588628369, guid: cae80e7e19b93014d81c2b7b4e200e69,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -46630,6 +47314,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2127669762736421172, guid: b74080c501552fd4c9970add9fc707fa,
         type: 3}
+      propertyPath: m_TagString
+      value: Material_Rock
+      objectReference: {fileID: 0}
+    - target: {fileID: 2127669762736421172, guid: b74080c501552fd4c9970add9fc707fa,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -47176,6 +47865,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9120426635959654188, guid: 110ab91f45d8a214a8062042ed7b6841,
         type: 3}
+      propertyPath: m_TagString
+      value: Material_Rock
+      objectReference: {fileID: 0}
+    - target: {fileID: 9120426635959654188, guid: 110ab91f45d8a214a8062042ed7b6841,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -47481,6 +48175,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PA_Mountainset1_hill4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7855577534021383252, guid: 84b21cd9c885ed4489cd82a8d1e76404,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7855577534021383252, guid: 84b21cd9c885ed4489cd82a8d1e76404,
+        type: 3}
+      propertyPath: m_TagString
+      value: Material_Rock
       objectReference: {fileID: 0}
     - target: {fileID: 7855577534021383252, guid: 84b21cd9c885ed4489cd82a8d1e76404,
         type: 3}
@@ -47822,6 +48526,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5127935813079523073, guid: b0caf8f2b511ed948be263d59a83cd1c,
         type: 3}
+      propertyPath: m_TagString
+      value: Material_Rock
+      objectReference: {fileID: 0}
+    - target: {fileID: 5127935813079523073, guid: b0caf8f2b511ed948be263d59a83cd1c,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -47979,6 +48688,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PA_Mountainset1_hill1 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9069872863127178892, guid: 2c4ada107f11c85428cf29b036419497,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 9069872863127178892, guid: 2c4ada107f11c85428cf29b036419497,
+        type: 3}
+      propertyPath: m_TagString
+      value: Material_Rock
       objectReference: {fileID: 0}
     - target: {fileID: 9069872863127178892, guid: 2c4ada107f11c85428cf29b036419497,
         type: 3}
@@ -48188,6 +48907,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PA_RockSet1_Pile7
+      objectReference: {fileID: 0}
+    - target: {fileID: 3059856665834797793, guid: bb96a129de5586241a425d6bcf8f1f6f,
+        type: 3}
+      propertyPath: m_TagString
+      value: Material_Rock
       objectReference: {fileID: 0}
     - target: {fileID: 3059856665834797793, guid: bb96a129de5586241a425d6bcf8f1f6f,
         type: 3}
@@ -48659,6 +49383,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7938968293588628369, guid: cae80e7e19b93014d81c2b7b4e200e69,
         type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7938968293588628369, guid: cae80e7e19b93014d81c2b7b4e200e69,
+        type: 3}
+      propertyPath: m_TagString
+      value: Material_Rock
+      objectReference: {fileID: 0}
+    - target: {fileID: 7938968293588628369, guid: cae80e7e19b93014d81c2b7b4e200e69,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -48699,6 +49433,69 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 7693362551863140785, guid: 292d96ecbec6cde47a83c1100b28214f, type: 3}
+--- !u!1 &2119072058
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2119072059}
+  - component: {fileID: 2119072060}
+  m_Layer: 0
+  m_Name: SoundEmitter
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2119072059
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2119072058}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.015, y: 1.049, z: 1.713}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 855046905}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2119072060
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2119072058}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -609510935
+      Data2: 1084115914
+      Data3: 787516810
+      Data4: 344342787
+    Path: event:/FX/Spaceship/Spaceship_Crahsed
+  Event: 
+  PlayEvent: 1
+  StopEvent: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 1
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 30
 --- !u!1 &2125088410
 GameObject:
   m_ObjectHideFlags: 0
@@ -49561,6 +50358,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PA_Mountainset1_hill1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9069872863127178892, guid: 2c4ada107f11c85428cf29b036419497,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 9069872863127178892, guid: 2c4ada107f11c85428cf29b036419497,
+        type: 3}
+      propertyPath: m_TagString
+      value: Material_Rock
       objectReference: {fileID: 0}
     - target: {fileID: 9069872863127178892, guid: 2c4ada107f11c85428cf29b036419497,
         type: 3}

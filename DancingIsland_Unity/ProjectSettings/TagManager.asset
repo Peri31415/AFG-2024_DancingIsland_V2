@@ -9,6 +9,11 @@ TagManager:
   - Second Trial
   - Third Trial
   - All Trials
+  - Material_Sand
+  - Material_Dirt
+  - Material_Grass
+  - Material_Rock
+  - Material_Wood
   layers:
   - Default
   - TransparentFX
