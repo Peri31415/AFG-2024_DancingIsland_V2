@@ -30,6 +30,16 @@ public class Timer : MonoBehaviour
             int seconds = Mathf.FloorToInt (remainingTime % 60);
 
             timerText.text = string.Format ("{0:00}:{1:00}", minutes, seconds);
+
+            if(remainingTime <= 0)
+                MyGameManager.instance.currentGameStage = "Player Death";
+
+            //Audio
+            if (remainingTime > 60)
+                AudioManager.instance.setTimerSound(0);
+            
+            else
+                AudioManager.instance.setTimerSound(1);
         } 
     }
 }

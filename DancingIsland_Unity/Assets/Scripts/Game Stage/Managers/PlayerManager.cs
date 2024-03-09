@@ -26,4 +26,23 @@ public class PlayerManager : MonoBehaviour
     {
         
     }
+
+    public void MouseAndMovementLock()
+    {
+        mouseLook.enabled = false;
+        instance.playerMovement.enabled = false;
+        Cursor.lockState = CursorLockMode.None;        
+    }
+
+    public void MouseAndMovementUnlock()
+    {
+        mouseLook.enabled = true;
+        instance.playerMovement.enabled = true;
+        Cursor.lockState = CursorLockMode.Locked;        
+    }
+
+    public PlayerSteps getPlayerStepsEvent()
+    {
+        return player.GetComponent<PlayerSteps>();
+    }
 }

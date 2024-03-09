@@ -16,7 +16,7 @@
 			<value>2</value>
 		</property>
 		<property name="maximum">
-			<value>8</value>
+			<value>9</value>
 		</property>
 		<property name="enumerationLabels">
 			<value>Start</value>
@@ -26,12 +26,10 @@
 			<value>Second Trial Completed</value>
 			<value>Third Trial</value>
 			<value>Third Trial Completed</value>
+			<value>Game Finished</value>
 			<value>Death</value>
 		</property>
 		<property name="isGlobal">
-			<value>true</value>
-		</property>
-		<property name="isReadOnly">
 			<value>true</value>
 		</property>
 		<property name="initialValue">

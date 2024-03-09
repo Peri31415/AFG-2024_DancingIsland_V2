@@ -17,6 +17,9 @@ public class gun : MonoBehaviour
         if (Input.GetButtonDown("Fire1") && weaponParent.transform.childCount > 0 && thisGun == weaponParent.transform.GetChild(0).gameObject)
         {
             Shoot();
+
+            //Audio
+            AudioManager.instance.playOneShot("event:/FX/Weapons/Gun/Shoot");
         }
     }
 

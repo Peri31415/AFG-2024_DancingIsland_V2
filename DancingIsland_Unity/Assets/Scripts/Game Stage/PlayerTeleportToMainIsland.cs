@@ -25,8 +25,20 @@ public class PlayerTeleportToMainIsland : MonoBehaviour
                     TrialsManager.instance.trialsTimer.enabled = false;
                     MyGameManager.instance.TrialComplete();
                     MyGameManager.instance.currentGameStage = "Second Trial Completed";
-                }                
+
+                    //Audio
+                    AudioManager.instance.anchorAmbienceToMainIsland();
+                }        
+
+                //Audio
+                AudioManager.instance.playOneShot("event:/FX/Collectables/Teleport/Teleport_fx");     
             }    
         }
+    }
+
+    private void OnTriggerExit (Collider other)
+    {
+        if (other.gameObject.tag == "Player")
+            teleportText.SetActive(false);
     }
 }

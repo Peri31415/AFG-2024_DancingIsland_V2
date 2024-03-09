@@ -153,6 +153,9 @@
 		</relationship>
 	</object>
 	<object class="EventMixerMaster" id="{280f549a-3f96-4e2c-aa69-1476c813fba1}">
+		<property name="volume">
+			<value>-2</value>
+		</property>
 		<relationship name="effectChain">
 			<destination>{39db50d6-a3d4-4264-bf2c-466657b3c174}</destination>
 		</relationship>
@@ -634,7 +637,7 @@
 			<value>0</value>
 		</property>
 		<property name="name">
-			<value>Start</value>
+			<value>Hub</value>
 		</property>
 		<relationship name="timeline">
 			<destination>{6c1971b2-5a0a-4bce-acce-c1a2f17293ed}</destination>
@@ -684,6 +687,9 @@
 		<property name="length">
 			<value>2</value>
 		</property>
+		<property name="triggerConditionMode">
+			<value>1</value>
+		</property>
 		<relationship name="timeline">
 			<destination>{6c1971b2-5a0a-4bce-acce-c1a2f17293ed}</destination>
 		</relationship>
@@ -703,6 +709,9 @@
 		</property>
 		<property name="length">
 			<value>2</value>
+		</property>
+		<property name="triggerConditionMode">
+			<value>1</value>
 		</property>
 		<relationship name="timeline">
 			<destination>{6c1971b2-5a0a-4bce-acce-c1a2f17293ed}</destination>

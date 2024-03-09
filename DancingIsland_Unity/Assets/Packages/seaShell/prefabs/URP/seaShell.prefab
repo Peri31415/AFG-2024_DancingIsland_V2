@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 4656673117224081499}
   - component: {fileID: 1615765168599142110}
   - component: {fileID: 6979976638256642802}
+  - component: {fileID: 7181485185453150141}
+  - component: {fileID: 8330528940485963582}
   m_Layer: 0
   m_Name: seaShell
   m_TagString: Untagged
@@ -104,6 +106,69 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 10
+  targetCount: {fileID: 0}
+--- !u!114 &7181485185453150141
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 976749517787264400}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -231627315
+      Data2: 1128320509
+      Data3: 425592978
+      Data4: -632352921
+    Path: event:/FX/Collectables/SeashellTarget/PositioinalClue
+  Event: 
+  PlayEvent: 11
+  StopEvent: 12
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 1
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 15
+--- !u!114 &8330528940485963582
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 976749517787264400}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 1244171089
+      Data2: 1085005360
+      Data3: 106251926
+      Data4: 1183596629
+    Path: event:/FX/Collectables/SeashellTarget/Destroy
+  Event: 
+  PlayEvent: 2
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 1
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 30
 --- !u!1 &2033846354089667726
 GameObject:
   m_ObjectHideFlags: 0

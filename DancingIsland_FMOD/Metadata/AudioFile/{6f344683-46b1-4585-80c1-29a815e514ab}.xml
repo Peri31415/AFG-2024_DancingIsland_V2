@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{6f344683-46b1-4585-80c1-29a815e514ab}">
+		<property name="assetPath">
+			<value>Music/Bira/MX_Bira_4.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>19.199999999999999</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{bee71836-49f4-4bb0-bdef-ccaeb6f1ec0d}</destination>
+		</relationship>
+	</object>
+</objects>

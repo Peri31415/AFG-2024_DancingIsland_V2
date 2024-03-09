@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using System.Linq;
 
 public class DialogueManager : MonoBehaviour
 {
@@ -26,10 +27,6 @@ public class DialogueManager : MonoBehaviour
 
         objectDialogue = objectDial;
 
-        MouseAndMovementLock();
-
-        //dialogueTrigger.SetActive(false);
-
         animator.SetBool("IsOpen", true);
 
         nameText.text = dialogue.name;
@@ -42,7 +39,8 @@ public class DialogueManager : MonoBehaviour
         foreach (string key in dialogue.dialogueKeys)
             dialogueKeys.Enqueue(key);
 
-        DisplayNextSentence();
+        if (sentences.Any())
+            DisplayNextSentence();
     }
 
     public void DisplayNextSentence()
@@ -81,20 +79,9 @@ public class DialogueManager : MonoBehaviour
 
         dialogueOn = false;
 
-        MouseAndMovementUnlock();
-    }
+        PlayerManager.instance.MouseAndMovementUnlock();
 
-    private void MouseAndMovementLock()
-    {
-        PlayerManager.instance.mouseLook.enabled = false;
-        PlayerManager.instance.playerMovement.enabled = false;
-        Cursor.lockState = CursorLockMode.None;        
-    }
-
-    private void MouseAndMovementUnlock()
-    {
-        PlayerManager.instance.mouseLook.enabled = true;
-        PlayerManager.instance.playerMovement.enabled = true;
-        Cursor.lockState = CursorLockMode.Locked;        
+        //Audio 
+        FMODUnity.RuntimeManager.StudioSystem.setParameterByName("IsDialogueActive", 0);
     }
 }

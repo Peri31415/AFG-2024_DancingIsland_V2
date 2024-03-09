@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{5a706b21-60be-4fc6-92d6-ed7c6cda9e51}">
+		<property name="assetPath">
+			<value>FX/Weapons/Gun/s_wpn_gun_pickup_2.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>0.875</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{bee71836-49f4-4bb0-bdef-ccaeb6f1ec0d}</destination>
+		</relationship>
+	</object>
+</objects>

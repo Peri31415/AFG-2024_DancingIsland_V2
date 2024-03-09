@@ -5,7 +5,7 @@
 			<value>MaterialCheck</value>
 		</property>
 		<relationship name="folder">
-			<destination>{fbd3eb98-63ae-4134-afda-cf7fb1cb5a60}</destination>
+			<destination>{0fbfc34a-1907-402e-85e9-546ce999edc5}</destination>
 		</relationship>
 		<relationship name="parameter">
 			<destination>{e97f7e39-5a45-4519-b5e5-a2ad7f32ae0a}</destination>

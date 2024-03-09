@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="ParameterPreset" id="{433fc205-6d74-41ba-b02d-65d53e4622f4}">
+		<property name="name">
+			<value>TimerSound</value>
+		</property>
+		<relationship name="folder">
+			<destination>{2e8cfffa-8ff5-4f34-8f1e-8e4872b18b3a}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{c506f60e-3056-47f9-9fad-2cd9d303758b}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{c506f60e-3056-47f9-9fad-2cd9d303758b}">
+		<property name="parameterType">
+			<value>2</value>
+		</property>
+		<property name="maximum">
+			<value>2</value>
+		</property>
+		<property name="enumerationLabels">
+			<value>NormalTimer</value>
+			<value>LastTimer</value>
+		</property>
+		<property name="isGlobal">
+			<value>true</value>
+		</property>
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+		<property name="isExposedRecursively">
+			<value>false</value>
+		</property>
+	</object>
+</objects>

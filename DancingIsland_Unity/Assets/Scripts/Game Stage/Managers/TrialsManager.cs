@@ -25,6 +25,8 @@ public class TrialsManager : MonoBehaviour
     public Transform trialOneTargets, trialThreeTargets;
     public Transform parkourStartingPos, playerMainIslandPos;    
 
+    public GameObject youWinCanvas, youDiedCanvas;
+
     [HideInInspector] public int trialOneTargetNumber, trialThreeEnemyNumber;
 
     private void Start() 

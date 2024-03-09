@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.02.00">
-	<object class="EventFolder" id="{0e6a5a04-2882-4962-9564-95df3833dbf3}">
+	<object class="EventFolder" id="{605d0f29-29ca-42c7-ae30-919d07d2c0fe}">
 		<property name="name">
-			<value>CoveredIsland</value>
+			<value>Pavip_NPC</value>
 		</property>
 		<relationship name="folder">
-			<destination>{27bef686-7428-4a22-8872-fb0667241f0d}</destination>
+			<destination>{814b86b7-56bb-45a2-ac7d-8ce70e2c9180}</destination>
 		</relationship>
 	</object>
 </objects>

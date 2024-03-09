@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using FMOD.Studio;
 using Unity.VisualScripting;
 using UnityEngine;
 
@@ -63,6 +64,15 @@ public class MyGameManager : MonoBehaviour
             foreach (GameObject obj in thirdTrialObjects)
                 obj.gameObject.SetActive(false);
         }
+
+        if (currentGameStage == "Player Death")
+        {
+            TrialsManager.instance.youDiedCanvas.SetActive(true);
+
+            //Audio
+            //StopAll
+            AudioManager.instance.playDeath();
+        }
     }
 
     private void SetStart()
@@ -72,6 +82,9 @@ public class MyGameManager : MonoBehaviour
 
         PlayerManager.instance.player.transform.position = startPlayerPosition.position;
         //PlayerManager.instance.player.transform.rotation = startPlayerPosition.rotation;
+
+        //Audio
+        AudioManager.instance.playStart();
     }
 
     public void SetFirstTrial()
@@ -93,6 +106,9 @@ public class MyGameManager : MonoBehaviour
         
         PlayerManager.instance.player.transform.position = TrialsManager.instance.parkourStartingPos.position;
         PlayerManager.instance.player.transform.rotation = TrialsManager.instance.parkourStartingPos.rotation;
+
+        //Audio
+        AudioManager.instance.startStopTimer();
     }
 
     public void SetThirdTrial()
@@ -102,6 +118,10 @@ public class MyGameManager : MonoBehaviour
 
         TrialsManager.instance.trialsTimer.enabled = true;
         TrialsManager.instance.trialsInfo.text = "Enemies down: ";
+
+
+        //Audio
+        AudioManager.instance.startStopTimer();
     }
 
     public void TrialComplete()
@@ -110,5 +130,8 @@ public class MyGameManager : MonoBehaviour
         TrialsManager.instance.trialsInfo.text = "Talk to the Entity";
 
         TrialsManager.instance.crossHair.SetActive(false);
+
+        //Audio
+        AudioManager.instance.startStopTimer();
     }
 }

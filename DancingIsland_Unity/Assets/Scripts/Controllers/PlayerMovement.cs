@@ -19,8 +19,6 @@ public class PlayerMovement : MonoBehaviour
     Vector3 velocity;
     bool isGrounded;
 
-    FMOD.Studio.EventInstance jumpSound; //Jump event code declaration for later definition
-
     // Update is called once per frame
     void Update()
     {
@@ -31,10 +29,10 @@ public class PlayerMovement : MonoBehaviour
             velocity.y = -2f;
         }
 
-        float x = Input.GetAxis("Horizontal");
-        float z = Input.GetAxis("Vertical");
+        float xMovement = Input.GetAxis("Horizontal");
+        float zMovement = Input.GetAxis("Vertical");
 
-        Vector3 move = transform.right * x + transform.forward * z;
+        Vector3 move = transform.right * xMovement + transform.forward * zMovement;
 
         controller.Move(move * speed * Time.deltaTime);
 
@@ -55,27 +53,24 @@ public class PlayerMovement : MonoBehaviour
 
         //AUDIO
         //Update walking material surface param
-        GetComponent<PlayerSteps>().MaterialChecking();
+        AudioManager.instance.playerSteps.MaterialChecking();
 
         //Update if charachter is running
         if (Input.GetKey(KeyCode.LeftShift))
-            FMODUnity.RuntimeManager.StudioSystem.setParameterByName("IsRunning", 1);
+            AudioManager.instance.playerSteps.setRunningTrue();
         else
-            FMODUnity.RuntimeManager.StudioSystem.setParameterByName("IsRunning", 0);
+            AudioManager.instance.playerSteps.setRunningFalse();
 
         //Steps
-        if (z != 0 && isGrounded)
-            GetComponent<PlayerSteps>().StartEvent();
+        if (zMovement != 0 && isGrounded)
+            AudioManager.instance.playerSteps.playSteps();
         else
-            GetComponent<PlayerSteps>().StopEvent();
+            AudioManager.instance.playerSteps.stopSteps();
 
         //Jump
         if (Input.GetButtonDown("Jump") && isGrounded)
         {
-            //create and trigger fpp jump FMOD event
-            jumpSound = FMODUnity.RuntimeManager.CreateInstance("event:/Foley/FPP/Jump");
-            jumpSound.start();
-            jumpSound.release();
+           AudioManager.instance.playerSteps.jump();
         }
     }
 }

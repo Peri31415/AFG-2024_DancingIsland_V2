@@ -7,22 +7,17 @@ using UnityEngine;
 
 public class PlayerSteps : MonoBehaviour
 {
-    //public FMOD.Studio.EventInstance playerStepsCodigo;
-    FMODUnity.StudioEventEmitter playerSteps;
+    FMOD.Studio.EventInstance playerSteps, playerJump;
 
     private float material = 0f;
-    
-    private void Start() 
-    {
-        playerSteps = GetComponent<FMODUnity.StudioEventEmitter>();
-    }
+
     public void MaterialChecking()
     {
         RaycastHit hit;
     
         Physics.Raycast(transform.position, Vector3.down, out hit, 10f);
 
-        Debug.Log ("Material: " + hit.collider.tag);
+        //Debug.Log ("Material: " + hit.collider.tag);
 
         if (hit.collider)
         {
@@ -49,21 +44,39 @@ public class PlayerSteps : MonoBehaviour
                         break;
             }
 
-            //playerStepsCodigo.setParameterByName("MaterialCheck", material);
             FMODUnity.RuntimeManager.StudioSystem.setParameterByName("MaterialCheck", material);
         }
     }
 
-    public void StartEvent()
+    public void playSteps()
     {
-        if (!playerSteps.IsPlaying())
-            playerSteps.Play();
-        // //Cannot initialise event within start function because it will play that instance and once it is done destroy it
-        //playerStepsCodigo = FMODUnity.RuntimeManager.CreateInstance("event:/Foley/FPP/Steps");        
+        if (AudioManager.instance.PlaybackState(playerSteps) != FMOD.Studio.PLAYBACK_STATE.PLAYING)
+        {
+            playerSteps = FMODUnity.RuntimeManager.CreateInstance("event:/Foley/FPP/Steps");
+            playerSteps.start();
+            playerSteps.release();
+        }
     }
 
-    public void StopEvent()
+    public void stopSteps()
     {
-        playerSteps.Stop();
+        playerSteps.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+    }
+
+    public void setRunningTrue()
+    {
+        FMODUnity.RuntimeManager.StudioSystem.setParameterByName("IsRunning", 1);
+    }
+
+    public void setRunningFalse()
+    {
+        FMODUnity.RuntimeManager.StudioSystem.setParameterByName("IsRunning", 0);
+    }
+
+    public void jump()
+    {
+        playerJump = FMODUnity.RuntimeManager.CreateInstance("event:/Foley/FPP/Jump");
+        playerJump.start();
+        playerJump.release();
     }
 }

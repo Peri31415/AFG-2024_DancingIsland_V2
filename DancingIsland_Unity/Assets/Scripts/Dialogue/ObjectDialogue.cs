@@ -38,33 +38,67 @@ public class ObjectDialogue : MonoBehaviour
         main_Camera.transform.rotation = Quaternion.Lerp(rot, target.rotation, duration);
     }
 
+    public Dialogue DialogueAccordingToGameStage()
+    {
+        foreach (Dialogue d in dialogueInteractions)
+        {
+            if (d.gameStage == MyGameManager.instance.currentGameStage && d.numberOfInteraction == numInteractionsPerStage)          
+                return d;
+        }
+
+        return null;
+    }
+
     public void TriggerDialogue(Dialogue dialogue)
     {
         FindObjectOfType<DialogueManager>().SartDialogue(dialogue, this);
     }
 
+    void TriggerDialogueAfterSound()
+    {
+        interactingWith = gameObject.name;
+        TriggerDialogue(DialogueAccordingToGameStage());        
+    }
+
     private void OnTriggerEnter(Collider other)
     {
+        
+        FMODUnity.RuntimeManager.StudioSystem.setParameterByName("GameStage", 0);
+
         if (other.gameObject.tag == "Player" && dialogueInteractions.Length != 0 && DialogueAccordingToGameStage() != null)
         {
             if (this.gameObject == GameObject.FindWithTag("Entity") && numInteractionsPerStage == 0)
             {
-                interactingWith = gameObject.name;
-                TriggerDialogue(DialogueAccordingToGameStage());
-            }            
+                PlayerManager.instance.MouseAndMovementLock();
 
-            else
+                //Audio
+                FMODUnity.RuntimeManager.StudioSystem.setParameterByName("IsDialogueActive", 1);
+
+                //Wait 2 seconds before triggering Dialgue anim and audio only if it is the currentGameStage is equeal to First Trial Completed
+                if (MyGameManager.instance.currentGameStage == "Start" || MyGameManager.instance.currentGameStage == "Second Trial Completed")
+                    Invoke (nameof (TriggerDialogueAfterSound), 6);
+                else
+                    Invoke (nameof (TriggerDialogueAfterSound), 3);
+            }            
+        }
+    }
+
+    private void OnTriggerStay(Collider other) 
+    {
+        if (other.gameObject.tag == "Player" && dialogueInteractions.Length != 0 && DialogueAccordingToGameStage() != null)
+        {
+            if (this.gameObject != GameObject.FindWithTag("Entity"))
             {
-                toggleConversation.SetActive(true);
+                toggleConversation.SetActive(true); 
 
                 if (Input.GetKey(KeyCode.E))
                 {
-                interactingWith = gameObject.name;
-                TriggerDialogue(DialogueAccordingToGameStage());
-
-                toggleConversation.SetActive(false);                    
+                    interactingWith = gameObject.name;
+                    toggleConversation.SetActive(false); 
+                    
+                    TriggerDialogue(DialogueAccordingToGameStage());               
                 }
-            }   
+            }
         }
     }
 
@@ -99,21 +133,16 @@ public class ObjectDialogue : MonoBehaviour
                     break;
                 case "Third Trial Completed":
                     MyGameManager.instance.currentGameStage = "Game Finished";
-                    //Enable Won Gui Canvas
                     numInteractionsPerStage = 0;
+
+                    TrialsManager.instance.youWinCanvas.SetActive(true);
+                    PlayerManager.instance.MouseAndMovementLock();
+
+                    //Audio
+                    //StopAll
+                    AudioManager.instance.playOneShot("event:/VO/Pavip_NPC/Congratulations_Ending");
                     break;            
             }
         }        
-    }
-
-    public Dialogue DialogueAccordingToGameStage()
-    {
-        foreach (Dialogue d in dialogueInteractions)
-        {
-            if (d.gameStage == MyGameManager.instance.currentGameStage && d.numberOfInteraction == numInteractionsPerStage)          
-                return d;
-        }
-
-        return null;
     }
 }

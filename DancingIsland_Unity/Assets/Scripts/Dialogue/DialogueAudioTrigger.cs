@@ -30,6 +30,7 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 using System.Runtime.InteropServices;
+using FMOD.Studio;
 
 class DialogueAudioTrigger : MonoBehaviour
 {
@@ -40,7 +41,7 @@ class DialogueAudioTrigger : MonoBehaviour
 #if UNITY_EDITOR
     void Reset()
     {
-        EventName = FMODUnity.EventReference.Find("event:/Character/Radio/Command");
+        EventName = FMODUnity.EventReference.Find("event:/VO/VO_AudioTable");
     }
 #endif
 

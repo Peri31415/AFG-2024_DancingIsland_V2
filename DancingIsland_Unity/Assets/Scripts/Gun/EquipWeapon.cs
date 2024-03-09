@@ -40,6 +40,9 @@ public class EquipWeapon : MonoBehaviour
         gun.transform.rotation = weaponParent.transform.rotation;
 
         gun.transform.SetParent(weaponParent);
+
+        //Audio
+        AudioManager.instance.playOneShot("event:/FX/Weapons/Gun/Pickup");
     }
 
     void Drop()
@@ -64,6 +67,9 @@ public class EquipWeapon : MonoBehaviour
         //Add random rotation
         float random = Random.Range(-1f, 1f);
         gun.GetComponent<Rigidbody>().AddTorque(new Vector3(random, random, random) * 10);
+
+        //Audio
+        AudioManager.instance.playOneShot("event:/FX/Whooshe/ThrowGun");
     }
 
     private void OnTriggerStay(Collider other)
@@ -81,6 +87,9 @@ public class EquipWeapon : MonoBehaviour
                 pickUpText.SetActive(false);
 
                 GameObject.Find ("TrialsTimer").GetComponent<Timer>().enabled = true;
+
+                //Audio
+                AudioManager.instance.startStopTimer();
             }
         }
     }

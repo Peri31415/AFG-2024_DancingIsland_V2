@@ -20,7 +20,7 @@ public class Spaceship : MonoBehaviour
         PlayerManager.instance.mouseLook.setMinAndMaxClamp (-70, 70);
 
         if (gameObject.GetComponent<BoxCollider>().enabled == false)
-            Invoke (nameof (enableCollider), 5.0f);
+            Invoke (nameof (enableCollider), 20.0f);
     }
 
     private void enableCollider()
@@ -46,6 +46,9 @@ public class Spaceship : MonoBehaviour
                 PlayerManager.instance.mouseLook.setMinAndMaxClamp (-90, 40);
 
                 gameObject.GetComponent<MeshCollider>().enabled = true;
+
+                //Audio
+                AudioManager.instance.playMainMusic();
             }
         }
     }

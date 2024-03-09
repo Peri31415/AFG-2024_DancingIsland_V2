@@ -2,13 +2,13 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="Event" id="{7bf3557f-ce62-4487-bc95-44773b54b0c0}">
 		<property name="name">
-			<value>VO</value>
+			<value>VO_AudioTable</value>
 		</property>
 		<property name="outputFormat">
 			<value>0</value>
 		</property>
 		<relationship name="folder">
-			<destination>{ef46624a-6f9a-4663-8e68-5d30a690b63f}</destination>
+			<destination>{814b86b7-56bb-45a2-ac7d-8ce70e2c9180}</destination>
 		</relationship>
 		<relationship name="mixer">
 			<destination>{80bd13b9-ab40-44b7-a837-4956802851ee}</destination>
@@ -32,7 +32,7 @@
 			<destination>{98187c43-2fc4-4aed-a7a5-0d55282af8a9}</destination>
 		</relationship>
 		<relationship name="banks">
-			<destination>{8520fe49-2cc4-49cb-98d9-242d99751d60}</destination>
+			<destination>{b4bf2d2b-1385-4141-bb6a-b55e137d8f7c}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixer" id="{80bd13b9-ab40-44b7-a837-4956802851ee}">

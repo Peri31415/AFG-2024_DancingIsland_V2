@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.02.00">
-	<object class="EventFolder" id="{60df9e76-a90b-4a79-980d-1f90ee72e480}">
+	<object class="EventFolder" id="{00945e8c-4403-440c-995d-d4c7fb6418ee}">
 		<property name="name">
-			<value>NearEntity</value>
+			<value>SeashellTarget</value>
 		</property>
 		<relationship name="folder">
-			<destination>{27bef686-7428-4a22-8872-fb0667241f0d}</destination>
+			<destination>{ed016123-0f9d-4722-b8e8-c4253b3328e5}</destination>
 		</relationship>
 	</object>
 </objects>

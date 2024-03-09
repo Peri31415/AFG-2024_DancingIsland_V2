@@ -5,7 +5,7 @@
 			<value>IsRunning</value>
 		</property>
 		<relationship name="folder">
-			<destination>{fbd3eb98-63ae-4134-afda-cf7fb1cb5a60}</destination>
+			<destination>{0fbfc34a-1907-402e-85e9-546ce999edc5}</destination>
 		</relationship>
 		<relationship name="parameter">
 			<destination>{e467e676-a6b8-444f-b095-17bf2fb2d2ba}</destination>
