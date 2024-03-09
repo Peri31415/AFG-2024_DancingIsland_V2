@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="Snapshot" id="{aad24616-701d-44f4-a1ba-5a40db25286e}">
+		<property name="name">
+			<value>FirstTrial</value>
+		</property>
+		<relationship name="mixer">
+			<destination>{e0beb75b-05cc-440f-a52d-7de7700dec5b}</destination>
+		</relationship>
+		<relationship name="automatableProperties">
+			<destination>{e46d4448-8708-4414-b7d2-c76f8c685015}</destination>
+		</relationship>
+		<relationship name="markerTracks">
+			<destination>{f8758c6a-d344-4789-a4eb-9cce7594cb81}</destination>
+		</relationship>
+		<relationship name="timeline">
+			<destination>{2346fbc2-c321-40db-befc-9114bf05ef10}</destination>
+		</relationship>
+		<relationship name="snapshotMasterTrack">
+			<destination>{31c4c198-c845-4b1b-a163-3c1f4af83d42}</destination>
+		</relationship>
+	</object>
+	<object class="EventAutomatableProperties" id="{e46d4448-8708-4414-b7d2-c76f8c685015}" />
+	<object class="MarkerTrack" id="{f8758c6a-d344-4789-a4eb-9cce7594cb81}" />
+	<object class="Timeline" id="{2346fbc2-c321-40db-befc-9114bf05ef10}" />
+	<object class="SnapshotMasterTrack" id="{31c4c198-c845-4b1b-a163-3c1f4af83d42}" />
+</objects>

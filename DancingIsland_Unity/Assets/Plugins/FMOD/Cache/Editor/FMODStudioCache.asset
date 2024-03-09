@@ -187,6 +187,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 10000
+--- !u!114 &-6469259014737341279
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: snapshot:/SecondTrial
+  m_EditorClassIdentifier: 
+  Path: snapshot:/SecondTrial
+  Guid:
+    Data1: 761868930
+    Data2: 1248032388
+    Data3: 1054868615
+    Data4: 1542608366
+  Banks:
+  - {fileID: 4148212590488511821}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
 --- !u!114 &-6444593368716290605
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -312,10 +339,10 @@ MonoBehaviour:
   Path: ../DancingIsland_FMOD/Build/Desktop/Ambience.bank
   Name: Ambience
   StudioPath: bank:/Ambience
-  lastModified: 638455617597054458
+  lastModified: 638455849095581184
   FileSizes:
   - Name: Desktop
-    Value: 7182944
+    Value: 7183008
   Exists: 1
 --- !u!114 &-5470900251640900381
 MonoBehaviour:
@@ -503,10 +530,10 @@ MonoBehaviour:
   Path: ../DancingIsland_FMOD/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638455617597328169
+  lastModified: 638455851975440196
   FileSizes:
   - Name: Desktop
-    Value: 3252
+    Value: 3884
   Exists: 1
 --- !u!114 &-3869767974578060122
 MonoBehaviour:
@@ -606,10 +633,10 @@ MonoBehaviour:
   Path: ../DancingIsland_FMOD/Build/Desktop/Foley.bank
   Name: Foley
   StudioPath: bank:/Foley
-  lastModified: 638455600684290235
+  lastModified: 638455849096951699
   FileSizes:
   - Name: Desktop
-    Value: 1043680
+    Value: 1043744
   Exists: 1
 --- !u!114 &-2854605380231346326
 MonoBehaviour:
@@ -659,10 +686,10 @@ MonoBehaviour:
   Path: ../DancingIsland_FMOD/Build/Desktop/VO.bank
   Name: VO
   StudioPath: bank:/VO
-  lastModified: 638455645009230687
+  lastModified: 638455849108030016
   FileSizes:
   - Name: Desktop
-    Value: 3650336
+    Value: 3650464
   Exists: 1
 --- !u!114 &-2365234551620273307
 MonoBehaviour:
@@ -691,6 +718,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 693
+--- !u!114 &-2233156378372572460
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: snapshot:/ThirdTrial
+  m_EditorClassIdentifier: 
+  Path: snapshot:/ThirdTrial
+  Guid:
+    Data1: -2067534189
+    Data2: 1255816690
+    Data3: -1250495323
+    Data4: 549130859
+  Banks:
+  - {fileID: 4148212590488511821}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
 --- !u!114 &-2104356915286959397
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -891,6 +945,33 @@ MonoBehaviour:
   - Rock
   - Wood
   Exists: 1
+--- !u!114 &-464780900682293293
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: snapshot:/TeleportReverb
+  m_EditorClassIdentifier: 
+  Path: snapshot:/TeleportReverb
+  Guid:
+    Data1: -1670413811
+    Data2: 1105254498
+    Data3: 1413302195
+    Data4: 293736283
+  Banks:
+  - {fileID: 4148212590488511821}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -946,6 +1027,14 @@ MonoBehaviour:
   - {fileID: -7142476613940482202}
   - {fileID: 3715383170989461687}
   - {fileID: -1570157637242692895}
+  - {fileID: -464780900682293293}
+  - {fileID: 7025698463616021478}
+  - {fileID: 3920888302828084500}
+  - {fileID: 6302373200816259851}
+  - {fileID: -6469259014737341279}
+  - {fileID: -2233156378372572460}
+  - {fileID: 865022534614820722}
+  - {fileID: 6137704904192301621}
   EditorParameters:
   - {fileID: -3869767974578060122}
   - {fileID: 3004933283642803869}
@@ -960,7 +1049,7 @@ MonoBehaviour:
   - {fileID: 4148212590488511821}
   StringsBanks:
   - {fileID: -4872389010644210200}
-  cacheTime: 638455661196663848
+  cacheTime: 638455851975440196
   cacheVersion: 131616
 --- !u!114 &2031023067440151
 MonoBehaviour:
@@ -1016,6 +1105,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 75347
+--- !u!114 &865022534614820722
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: snapshot:/InSpaceShip
+  m_EditorClassIdentifier: 
+  Path: snapshot:/InSpaceShip
+  Guid:
+    Data1: 1675558309
+    Data2: 1097214247
+    Data3: -742339712
+    Data4: 164122822
+  Banks:
+  - {fileID: 4148212590488511821}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
 --- !u!114 &1113499676871731523
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1333,6 +1449,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 23041
+--- !u!114 &3920888302828084500
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: snapshot:/Dialogue
+  m_EditorClassIdentifier: 
+  Path: snapshot:/Dialogue
+  Guid:
+    Data1: -368615880
+    Data2: 1169776791
+    Data3: 725260430
+    Data4: -633009984
+  Banks:
+  - {fileID: 4148212590488511821}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
 --- !u!114 &4148212590488511821
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1348,10 +1491,10 @@ MonoBehaviour:
   Path: ../DancingIsland_FMOD/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638455617597321569
+  lastModified: 638455851975433729
   FileSizes:
   - Name: Desktop
-    Value: 3596
+    Value: 9232
   Exists: 1
 --- !u!114 &4612850361308631050
 MonoBehaviour:
@@ -1537,6 +1680,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 10000
+--- !u!114 &6137704904192301621
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: snapshot:/InMainIsland
+  m_EditorClassIdentifier: 
+  Path: snapshot:/InMainIsland
+  Guid:
+    Data1: -611423296
+    Data2: 1075652594
+    Data3: -2035634542
+    Data4: 540434694
+  Banks:
+  - {fileID: 4148212590488511821}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
 --- !u!114 &6296270291316633276
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1552,11 +1722,38 @@ MonoBehaviour:
   Path: ../DancingIsland_FMOD/Build/Desktop/Music.bank
   Name: Music
   StudioPath: bank:/Music
-  lastModified: 638455661196663848
+  lastModified: 638455849105442901
   FileSizes:
   - Name: Desktop
-    Value: 9316608
+    Value: 9316704
   Exists: 1
+--- !u!114 &6302373200816259851
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: snapshot:/AllMuted
+  m_EditorClassIdentifier: 
+  Path: snapshot:/AllMuted
+  Guid:
+    Data1: -384832402
+    Data2: 1093346113
+    Data3: -1497662049
+    Data4: -1876088977
+  Banks:
+  - {fileID: 4148212590488511821}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
 --- !u!114 &6422696148171151824
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1583,6 +1780,33 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
+  Length: 0
+--- !u!114 &7025698463616021478
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: snapshot:/FirstTrial
+  m_EditorClassIdentifier: 
+  Path: snapshot:/FirstTrial
+  Guid:
+    Data1: -1429060074
+    Data2: 1156870173
+    Data3: 1079687841
+    Data4: 1848124891
+  Banks:
+  - {fileID: 4148212590488511821}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
   Length: 0
 --- !u!114 &7300617711490419112
 MonoBehaviour:
@@ -1831,8 +2055,8 @@ MonoBehaviour:
   Path: ../DancingIsland_FMOD/Build/Desktop/FX.bank
   Name: FX
   StudioPath: bank:/FX
-  lastModified: 638455600684629427
+  lastModified: 638455851762646199
   FileSizes:
   - Name: Desktop
-    Value: 2327968
+    Value: 2328224
   Exists: 1
